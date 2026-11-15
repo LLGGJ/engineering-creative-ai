@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class PackageStructureTests(unittest.TestCase):
     def test_manifest_exists_and_version(self):
         data = json.loads((ROOT / 'PACKAGE-MANIFEST.json').read_text(encoding='utf-8'))
-        self.assertEqual(data['version'], '3.0.0')
+        self.assertEqual(data['version'], '3.0.3')
         self.assertGreater(data['file_count'], 60)
 
     def test_previous_baselines_are_preserved(self):
@@ -27,6 +27,13 @@ class PackageStructureTests(unittest.TestCase):
         text = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
         self.assertTrue(text.startswith('---\n'))
         self.assertIn('name: engineering-creative-ai', text)
+
+    def test_skill_requires_direct_execution_for_user_tasks(self):
+        text = (ROOT / 'SKILL.md').read_text(encoding='utf-8').lower()
+        router = (ROOT / 'CORE' / 'ROUTER.md').read_text(encoding='utf-8').lower()
+        self.assertIn('execução direta', text)
+        self.assertIn('execução direta', router)
+        self.assertNotIn('entregue um prompt completo para a ferramenta de desenvolvimento escolhida', text)
 
 if __name__ == '__main__':
     unittest.main()

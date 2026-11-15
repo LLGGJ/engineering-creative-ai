@@ -6,13 +6,28 @@
 
 **Reverse engineering · Software engineering · Android · APIs · Security · Cinematic web · Video production · Research · QA**
 
-[![Version](https://img.shields.io/badge/version-3.0.0-7c3aed?style=for-the-badge)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-3.0.3-7c3aed?style=for-the-badge)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
 [![Validation](https://img.shields.io/badge/package-validation-ready-0ea5e9?style=for-the-badge)](tests/)
 
 **Uma base modular de conhecimento, processos e ferramentas para transformar tarefas técnicas complexas em entregas verificáveis.**
 
 [Começar](#-início-rápido) · [Arquitetura](#-arquitetura) · [Módulos](#-módulos) · [Portal visual](portal/) · [Contribuir](CONTRIBUTING.md)
+
+### Política de execução direta
+
+A skill prioriza executar a tarefa real quando o ambiente, autorização e ferramentas estiverem disponíveis. Prompts são uma exceção e não o comportamento padrão.
+
+### Template de entrega recomendada
+
+- objetivo e contexto
+- ambiente, ferramentas e permissões
+- premissas e limitações
+- ação executada ou pendente
+- evidência e validação
+- riscos, autorização e próximos passos
+
+Use este padrão para tarefas simples e complexas, para reduzir ambiguidades e evitar afirmações sem prova.
 
 </div>
 
@@ -33,6 +48,8 @@ Engineering Creative AI é um sistema modular para Claude e outros agentes que a
 - **APIs e integrações:** contratos, autenticação, HTTP, webhooks, SDKs e diagnóstico.
 - **Segurança defensiva:** modelagem de ameaças, auditoria e mitigação.
 - **Web cinematográfica:** direção visual, interfaces 3D, performance, acessibilidade e prompts de implementação.
+- **Imagem e visão:** análise visual, edição, comparação de arte e processamento de conteúdo visual com preservação do original.
+- **Documentos e PDFs:** extração, resumo, OCR, comparação e QA documental.
 - **Vídeo:** criação do zero, geração por IA, Blender, animação por código, edição de footage, áudio, legendas, FFmpeg e QA.
 - **Pesquisa e inteligência:** fontes, comparação técnica, análise de repositórios e inteligência comercial baseada em evidências.
 - **Qualidade:** checklists, gates, casos de teste e validação reproduzível.
@@ -49,7 +66,7 @@ Engineering Creative AI é um sistema modular para Claude e outros agentes que a
 
 ```bash
 mkdir -p .claude/skills
-cp -R engineering-creative-ai-v3.0.0 .claude/skills/engineering-creative-ai
+cp -R engineering-creative-ai-v3.0.3 .claude/skills/engineering-creative-ai
 ```
 
 Se já estiver dentro do repositório da Skill, copie a pasta para `.claude/skills/engineering-creative-ai/`. Para uso global, consulte a documentação atual do Claude Code sobre diretórios de Skills. O caminho e o método de importação podem variar entre produtos e versões.
@@ -83,22 +100,22 @@ flowchart TD
 
 ## 🧩 Módulos
 
-| Diretório | Responsabilidade |
-|---|---|
-| `CORE/` | Roteamento, operação, memória, conectores, tokens e autoria de Skills. |
-| `SPECIALISTS/` | Especialistas por domínio técnico. |
-| `KNOWLEDGE/` | Fundamentos e playbooks reutilizáveis. |
-| `WORKFLOWS/` | Processos passo a passo e entregáveis. |
-| `VIDEO/` | Pipeline audiovisual completo. |
-| `PROMPTS/` | Briefings e prompts estruturados. |
-| `CHECKLISTS/` | Segurança, testes, release e qualidade. |
-| `EVALUATIONS/` | Casos de teste, gates e scorecards. |
-| `TOOLS/` | Utilitários e instruções de ferramentas. |
-| `REFERENCES/` | Fontes oficiais e referências externas. |
-| `docs/` | Arquitetura, governança e manutenção. |
-| `portal/` | Página de apresentação estática com animações acessíveis. |
-| `scripts/` e `tests/` | Validação automatizada do pacote. |
-| `ARCHIVE/` | Cópias preservadas das bases anteriores. Não usar como fonte primária. |
+| Diretório             | Responsabilidade                                                          |
+| --------------------- | ------------------------------------------------------------------------- |
+| `CORE/`               | Roteamento, operação, memória, conectores, tokens e autoria de Skills.    |
+| `SPECIALISTS/`        | Especialistas por domínio técnico.                                        |
+| `KNOWLEDGE/`          | Fundamentos e playbooks reutilizáveis.                                    |
+| `WORKFLOWS/`          | Processos passo a passo e entregáveis, incluindo imagem, documentos e QA. |
+| `VIDEO/`              | Pipeline audiovisual completo.                                            |
+| `PROMPTS/`            | Briefings e prompts estruturados.                                         |
+| `CHECKLISTS/`         | Segurança, testes, release e qualidade.                                   |
+| `EVALUATIONS/`        | Casos de teste, gates e scorecards.                                       |
+| `TOOLS/`              | Utilitários e instruções de ferramentas.                                  |
+| `REFERENCES/`         | Fontes oficiais e referências externas.                                   |
+| `docs/`               | Arquitetura, governança e manutenção.                                     |
+| `portal/`             | Página de apresentação estática com animações acessíveis.                 |
+| `scripts/` e `tests/` | Validação automatizada do pacote.                                         |
+| `ARCHIVE/`            | Cópias preservadas das bases anteriores. Não usar como fonte primária.    |
 
 ## 🎬 Portal visual
 
@@ -129,7 +146,7 @@ Use engenharia reversa e auditoria apenas em sistemas próprios ou com autoriza�
 
 ## ♻️ Política de evolução aditiva
 
-A partir da versão 3.0.0, a estrutura é tratada como contrato público:
+A partir da versão 3.0.3, a estrutura é tratada como contrato público:
 
 1. **Não apagar nem renomear** arquivos/pastas publicados.
 2. Preferir adicionar novos módulos, exemplos e versões.
@@ -155,7 +172,7 @@ MIT para os materiais originais deste repositório. Referências e ferramentas d
 
 <div align="center">
 
-**Engineering Creative AI · 3.0.0**  
-*Build carefully. Verify everything. Preserve what works.*
+**Engineering Creative AI · 3.0.3**  
+_Build carefully. Verify everything. Preserve what works._
 
 </div>

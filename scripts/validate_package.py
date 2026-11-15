@@ -15,7 +15,7 @@ def main() -> None:
     if not MANIFEST.is_file(): fail('PACKAGE-MANIFEST.json is missing')
     data = json.loads(MANIFEST.read_text(encoding='utf-8'))
     if data.get('name') != 'Engineering Creative AI': fail('unexpected package name')
-    if data.get('version') != '3.0.0': fail('manifest version must be 3.0.0 for this release')
+    if data.get('version') != '3.0.3': fail('manifest version must be 3.0.3 for this release')
     for rel in REQUIRED:
         if not (ROOT / rel).is_file(): fail(f'required file missing: {rel}')
     declared = {entry['path']: entry for entry in data.get('files', [])}

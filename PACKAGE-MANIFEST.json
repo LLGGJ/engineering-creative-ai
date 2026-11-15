@@ -1,9 +1,9 @@
 {
   "name": "Engineering Creative AI",
-  "version": "3.0.0",
+  "version": "3.0.3",
   "release_date": "2026-11-15",
   "description": "Additive modular engineering knowledge system for AI coding agents, with preserved 1.x and 2.x baselines, cinematic portal and automated package validation.",
-  "file_count": 160,
+  "file_count": 164,
   "manifest_policy": "All files except this manifest are listed with byte count and SHA-256. file_count includes this manifest.",
   "compatibility_policy": "Additive: do not delete or rename published paths; preserve replaced legacy content and document migrations.",
   "files": [
@@ -394,8 +394,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1093,
-      "sha256": "ef5d0c308b24b7c9afb26d49c0c40af84a50e8d0cbd763d86fbfae683b58820b"
+      "bytes": 2487,
+      "sha256": "0b7224a9fcad429284b1808b7e64c01259495403b506c710b0c7b2b7207e23c9"
     },
     {
       "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
@@ -479,8 +479,8 @@
     },
     {
       "path": "CORE/ROUTER.md",
-      "bytes": 1949,
-      "sha256": "51fb5fbbc0fe182e56512ccc40ed88ac9f7023c525c65fd5f39ae21ddf9ecbc5"
+      "bytes": 3807,
+      "sha256": "707550f1d3826c977a82dd263d588a3da420348152f320a152261b74f0efec7d"
     },
     {
       "path": "CORE/SKILL-AUTHORING.md",
@@ -514,13 +514,13 @@
     },
     {
       "path": "EVALUATIONS/TEST-CASES.md",
-      "bytes": 1157,
-      "sha256": "27af99c444aab13165bde875b0c12b97595077315b904adfe22bdf75e55c4c45"
+      "bytes": 2289,
+      "sha256": "c702c44a23fb80d9479454e44515c3e7858d3ba0a103876770e05c4843e95cd2"
     },
     {
       "path": "EVALUATIONS/TEST-PROMPTS.md",
-      "bytes": 965,
-      "sha256": "b0d52cdda91fe12986e89cd91c36cdd3de6f2082a6a9613dd86e8a2e5b9a1189"
+      "bytes": 1058,
+      "sha256": "10a99f2abddd95b93b9f27aa9503d83a9c03ae59301931b8db6a7b822fb9ed29"
     },
     {
       "path": "KNOWLEDGE/FUNDAMENTALS.md",
@@ -569,8 +569,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7592,
-      "sha256": "7679b23db9fb567b20d378c3b454b9317b8daea305adac6ba49b5918cedf8e44"
+      "bytes": 9035,
+      "sha256": "56ce20957d98ed98207b032d41a0d19ca2709b702bd52fd0421370cd435f876b"
     },
     {
       "path": "REFERENCES/REFERENCE-INDEX.md",
@@ -584,8 +584,13 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 4165,
-      "sha256": "70d9ef4d36e190d3c5b9d16cab016bcac6f136a23f1baf9ee8ba3af90417b196"
+      "bytes": 7420,
+      "sha256": "e08867f21a82e84077e5bec093a8218d3ce4e3ab9e25d3f69b9b5e0c4aa6d1ad"
+    },
+    {
+      "path": "SPECIALISTS/AI-IMAGE-ANALYSIS.md",
+      "bytes": 1542,
+      "sha256": "387393be3d71906716e9e7dd1ad9428a86c231d9fe3ab2fa99350bafac6cf59d"
     },
     {
       "path": "SPECIALISTS/ANDROID.md",
@@ -611,6 +616,11 @@
       "path": "SPECIALISTS/CINEMATIC-WEB-DESIGN.md",
       "bytes": 2042,
       "sha256": "159304af71494573640c7ede4eb045b1c58603abf6a1df3c1535a19875011487"
+    },
+    {
+      "path": "SPECIALISTS/DOCUMENT-PROCESSING.md",
+      "bytes": 1319,
+      "sha256": "c269e498f6ea3543ec7a649f63d668d0900ee944cc4b5550a432379f640ae95f"
     },
     {
       "path": "SPECIALISTS/QUALITY-ASSURANCE.md",
@@ -713,6 +723,16 @@
       "sha256": "052e9bce95017326b996141e25caf23c84a73089cd20f4e98b077ae0ab746e65"
     },
     {
+      "path": "WORKFLOWS/IMAGE-DOCUMENT-PIPELINE.md",
+      "bytes": 757,
+      "sha256": "720ca54f8ce3c58ae4732409e5ff51956530025f8a4e3cfea8af1d40ea74787d"
+    },
+    {
+      "path": "WORKFLOWS/QUALITY-VERIFICATION.md",
+      "bytes": 654,
+      "sha256": "5275fd13ab6836158528824ac33143707c6ff19fdb2a8fce05ab75c08a688c87"
+    },
+    {
       "path": "WORKFLOWS/RESEARCH-AND-SOURCE-VERIFICATION.md",
       "bytes": 535,
       "sha256": "20b415abe61bd5ab41576a503401f8f4abc2abb21a371b4bf8f66f865723069b"
@@ -795,12 +815,12 @@
     {
       "path": "scripts/validate_package.py",
       "bytes": 1998,
-      "sha256": "e6e16857d897b50c948af227fb6c3cd1fff8da76dd75475994fd71a12fcd2a08"
+      "sha256": "7693531d00ef67bc658d6b815e5611c13f06263de4be16bc60176670b51add27"
     },
     {
       "path": "tests/test_package.py",
-      "bytes": 1338,
-      "sha256": "4aaf1c12448062714f192f476cb8468b2b39a4819a361fcf98a32ba39502465b"
+      "bytes": 1769,
+      "sha256": "29b271791be9cc1f589a52effde524955778c55183b40804d5bfe746c7e162ed"
     }
   ]
 }

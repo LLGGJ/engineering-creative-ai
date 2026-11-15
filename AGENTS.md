@@ -8,5 +8,6 @@
 - Execute `python scripts/validate_package.py` e `python -m unittest discover -s tests -v`.
 - Não inclua segredos, tokens ou dados pessoais.
 
+
 - Para regenerar o manifesto, execute `python scripts/build_manifest.py`.
 - Para provar que caminhos antigos continuam presentes, execute `python scripts/check_additive_changes.py --baseline <manifesto-anterior>`.

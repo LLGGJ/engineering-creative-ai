@@ -1,0 +1,143 @@
+{
+  "name": "Engineering Creative AI",
+  "version": "1.0.0",
+  "generated": "2026-11-14",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 346
+    },
+    {
+      "path": "CHECKLISTS/RELEASE.md",
+      "bytes": 376
+    },
+    {
+      "path": "CHECKLISTS/SECURITY.md",
+      "bytes": 434
+    },
+    {
+      "path": "CHECKLISTS/SOFTWARE-TESTING.md",
+      "bytes": 490
+    },
+    {
+      "path": "CHECKLISTS/WEBSITE-QUALITY.md",
+      "bytes": 608
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 502
+    },
+    {
+      "path": "CORE/OPERATING-MODEL.md",
+      "bytes": 1182
+    },
+    {
+      "path": "CORE/PROJECT-MEMORY.md",
+      "bytes": 631
+    },
+    {
+      "path": "CORE/TOKEN-INTELLIGENCE.md",
+      "bytes": 2240
+    },
+    {
+      "path": "CORE/TOOL-AND-CONNECTOR-INTELLIGENCE.md",
+      "bytes": 2172
+    },
+    {
+      "path": "EVALUATIONS/QUALITY-SCORE.md",
+      "bytes": 811
+    },
+    {
+      "path": "EVALUATIONS/TEST-CASES.md",
+      "bytes": 1157
+    },
+    {
+      "path": "KNOWLEDGE/FUNDAMENTALS.md",
+      "bytes": 1209
+    },
+    {
+      "path": "KNOWLEDGE/WEB-3D-PLAYBOOK.md",
+      "bytes": 1177
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 834
+    },
+    {
+      "path": "PROMPTS/CINEMATIC-WEBSITE-PROMPT.md",
+      "bytes": 2306
+    },
+    {
+      "path": "PROMPTS/REVERSE-ENGINEERING-PROMPT.md",
+      "bytes": 482
+    },
+    {
+      "path": "PROMPTS/SOFTWARE-PROJECT-PROMPT.md",
+      "bytes": 522
+    },
+    {
+      "path": "README.md",
+      "bytes": 2583
+    },
+    {
+      "path": "REFERENCES/REFERENCE-INDEX.md",
+      "bytes": 1719
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 5524
+    },
+    {
+      "path": "SPECIALISTS/ANDROID.md",
+      "bytes": 1044
+    },
+    {
+      "path": "SPECIALISTS/API-INTELLIGENCE.md",
+      "bytes": 721
+    },
+    {
+      "path": "SPECIALISTS/BUSINESS-INTELLIGENCE.md",
+      "bytes": 612
+    },
+    {
+      "path": "SPECIALISTS/CINEMATIC-WEB-DESIGN.md",
+      "bytes": 2042
+    },
+    {
+      "path": "SPECIALISTS/QUALITY-ASSURANCE.md",
+      "bytes": 761
+    },
+    {
+      "path": "SPECIALISTS/RESEARCH.md",
+      "bytes": 662
+    },
+    {
+      "path": "SPECIALISTS/REVERSE-ENGINEERING.md",
+      "bytes": 2106
+    },
+    {
+      "path": "SPECIALISTS/SECURITY-AUDIT.md",
+      "bytes": 875
+    },
+    {
+      "path": "SPECIALISTS/SOFTWARE-ENGINEERING.md",
+      "bytes": 1157
+    },
+    {
+      "path": "TOOLS/README.md",
+      "bytes": 531
+    },
+    {
+      "path": "WORKFLOWS/AUTONOMOUS-DEVELOPMENT.md",
+      "bytes": 526
+    },
+    {
+      "path": "WORKFLOWS/REVERSE-ENGINEERING.md",
+      "bytes": 524
+    },
+    {
+      "path": "WORKFLOWS/WEBSITE-PRODUCTION.md",
+      "bytes": 716
+    }
+  ]
+}

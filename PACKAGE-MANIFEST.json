@@ -1,0 +1,806 @@
+{
+  "name": "Engineering Creative AI",
+  "version": "3.0.0",
+  "release_date": "2026-11-15",
+  "description": "Additive modular engineering knowledge system for AI coding agents, with preserved 1.x and 2.x baselines, cinematic portal and automated package validation.",
+  "file_count": 160,
+  "manifest_policy": "All files except this manifest are listed with byte count and SHA-256. file_count includes this manifest.",
+  "compatibility_policy": "Additive: do not delete or rename published paths; preserve replaced legacy content and document migrations.",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "bytes": 139,
+      "sha256": "0236baaa876eef2fbe3d4a9b01aac87d148b925fac3f58e1bc0cc9819ed88dab"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "bytes": 231,
+      "sha256": "c2306ffaccb334b843c82c605987eac141a9fd61cd7c73886eeb2c865af31449"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/module_request.md",
+      "bytes": 263,
+      "sha256": "a544cda8f8055cc4f65d973c9e3da03d0eb740f8202987e8b8a82e54cf66d2c2"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 777,
+      "sha256": "e5e451081a30ce1f82f344b5320c400c3c1683efbe57ef1dc6c3589da5a5f761"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 140,
+      "sha256": "6c9f805742c3968170a85f2a29772dee654880be55e7b5b232106e068477e576"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 674,
+      "sha256": "548dc8efc5f7f7d1f23f8085f7a0c816f31cc18bc02f98ca7f3c7add1881eb33"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CHANGELOG.md",
+      "bytes": 346,
+      "sha256": "63c6982fce435470a9802310dac069d3e17dede7adf5eb6179ee93c106a7c1f2"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CHECKLISTS/RELEASE.md",
+      "bytes": 376,
+      "sha256": "f80bd0833a3e4eba02644446b2fa628b1a5134b467f8d425fa68628f105eff01"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CHECKLISTS/SECURITY.md",
+      "bytes": 434,
+      "sha256": "fb6f65aca1e4717233fd0e9bd09db27440db6081a4190fe47a0a3e5c1ea1f230"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CHECKLISTS/SOFTWARE-TESTING.md",
+      "bytes": 490,
+      "sha256": "bc9fdb800412ff474c55f3052ac49c64534bb52c7ef6fde64e92d9e8122bccdb"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CHECKLISTS/WEBSITE-QUALITY.md",
+      "bytes": 608,
+      "sha256": "ef0e4409fd2d0f5a7077dde526e813547bd1c93e6443172f19e407014695f2b6"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CONTRIBUTING.md",
+      "bytes": 502,
+      "sha256": "7a6e8f4f1318139699c739baa63855a949578ec510dbee0badabdbbd224dfc0d"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CORE/OPERATING-MODEL.md",
+      "bytes": 1182,
+      "sha256": "248b5c39aba8e0e7f0f075851ef42091e216e6c3ac499d7db1360787452b96c4"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CORE/PROJECT-MEMORY.md",
+      "bytes": 631,
+      "sha256": "1302f60a21299965225915b27814bb8edb95224a4c02c375bb0d6346908be835"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CORE/TOKEN-INTELLIGENCE.md",
+      "bytes": 2240,
+      "sha256": "8c5dcfd5e2577d5eb2806fd15b1843e747f983298601c28b5389ca828fc85eca"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CORE/TOOL-AND-CONNECTOR-INTELLIGENCE.md",
+      "bytes": 2172,
+      "sha256": "3c5cc48dfe850ba41393649bc1736d7ea21c7a0d44cd75760537897de86989e3"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/EVALUATIONS/QUALITY-SCORE.md",
+      "bytes": 811,
+      "sha256": "de0d7a539602852a0ca641503223d8b1520270e8cd791d7b9eed953475925236"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/EVALUATIONS/TEST-CASES.md",
+      "bytes": 1157,
+      "sha256": "27af99c444aab13165bde875b0c12b97595077315b904adfe22bdf75e55c4c45"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/KNOWLEDGE/FUNDAMENTALS.md",
+      "bytes": 1209,
+      "sha256": "041ac37c0db0f3443eedbd39014630a10ee5ed4ca214f870c4b9ebe7953bcf77"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/KNOWLEDGE/WEB-3D-PLAYBOOK.md",
+      "bytes": 1177,
+      "sha256": "91d65274376c34f8d1d03b7e3ce5c49733ca4b551822fa57d4a9bb81a317cc83"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/LICENSE",
+      "bytes": 834,
+      "sha256": "9678dee84b95b50b3cc1db54766a41ccd4c53ff8d51d58e6b83d49070055d017"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/PACKAGE-MANIFEST.json",
+      "bytes": 2716,
+      "sha256": "d6e59f0d5fe240aaca6a6de6e26c93ee921e4ab9591b41c0aefe5273c9fb1147"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/PROMPTS/CINEMATIC-WEBSITE-PROMPT.md",
+      "bytes": 2306,
+      "sha256": "1f3be945bb903a82bfd34676287734d647e98b4804539b7169ca270dfd912688"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/PROMPTS/REVERSE-ENGINEERING-PROMPT.md",
+      "bytes": 482,
+      "sha256": "9292863f1f6df33f4a37ce868fb734bfb948d763ed01d52f30bad2b3cf043323"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/PROMPTS/SOFTWARE-PROJECT-PROMPT.md",
+      "bytes": 522,
+      "sha256": "d0268a20d4574c86aad1964701275cd60a56abf6d79b230c76f4abff205a78bd"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/README.md",
+      "bytes": 2583,
+      "sha256": "0b8664cda28311e42724c98695838c1203282315bff1d138ff2b72f0a62992ab"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/REFERENCES/REFERENCE-INDEX.md",
+      "bytes": 1719,
+      "sha256": "ae341c7114f571194fc4e8a9319420a115c3cb2c030eac1b27cd9ff7e9be8626"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SKILL.md",
+      "bytes": 5524,
+      "sha256": "eff590ed6830a0543e15962cd8770b59a23c24634368bee9e41e62ed0861f322"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/ANDROID.md",
+      "bytes": 1044,
+      "sha256": "8d28da3046ec69f7f2ed68d9d6ff771a1b876e428ba81fb165bd311adacd789a"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/API-INTELLIGENCE.md",
+      "bytes": 721,
+      "sha256": "0d0e196358637055f5792411dec1e2ef614d20a49930c02ce1d4b115085f6f8c"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/BUSINESS-INTELLIGENCE.md",
+      "bytes": 612,
+      "sha256": "b503f8fcabd10d4021432916366881d251e611abb0b3255f15d527e61cd2609e"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/CINEMATIC-WEB-DESIGN.md",
+      "bytes": 2042,
+      "sha256": "159304af71494573640c7ede4eb045b1c58603abf6a1df3c1535a19875011487"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/QUALITY-ASSURANCE.md",
+      "bytes": 761,
+      "sha256": "662abac2c05be3e3935c8c3d45116740e52b38d2a236042a438a3759052064da"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/RESEARCH.md",
+      "bytes": 662,
+      "sha256": "9a143e4d7358ba733f6a83c887f1714df63eedf862d77c0ed1bceab2e8b87fe6"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/REVERSE-ENGINEERING.md",
+      "bytes": 2106,
+      "sha256": "d7b98813e9c69829dcc63917cee3005dc384e43d0f474b43d3dba41b4ca4ae80"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/SECURITY-AUDIT.md",
+      "bytes": 875,
+      "sha256": "56380cfafd7a19252282f1e44a15cc2945fdf0985dcd74477c0cad279e2e3c40"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/SPECIALISTS/SOFTWARE-ENGINEERING.md",
+      "bytes": 1157,
+      "sha256": "d4d9da6164d1f37d209afc04ba579173d1346d6370836c12d6d7693e196e466a"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/TOOLS/README.md",
+      "bytes": 531,
+      "sha256": "fb32a4dbebf382ebbbd185e7f66c0ed51f7f02e0b418a5026025386f94f71801"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/WORKFLOWS/AUTONOMOUS-DEVELOPMENT.md",
+      "bytes": 526,
+      "sha256": "052e9bce95017326b996141e25caf23c84a73089cd20f4e98b077ae0ab746e65"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/WORKFLOWS/REVERSE-ENGINEERING.md",
+      "bytes": 524,
+      "sha256": "d2da3caa439ce38aa0a1b0c79d6b6880a0dcf7eb778a97e1353acf5f2594ad9c"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/WORKFLOWS/WEBSITE-PRODUCTION.md",
+      "bytes": 716,
+      "sha256": "664a22f0068d9d0ec9e5e7cc04ffae2335f49f18f42c148bfa3a004908b4abaf"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CHANGELOG.md",
+      "bytes": 415,
+      "sha256": "7ac9d89dcc063acf9b5793d9dfcde0e47122b35f39db338fa48bcca2cdd62fe1"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CHECKLISTS/SKILL-PUBLISHING.md",
+      "bytes": 611,
+      "sha256": "87815d1527f85e308eb5802645e0b0aca3486f34249b3c9f6eae56f6c0afe4c0"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CHECKLISTS/SOFTWARE-QUALITY.md",
+      "bytes": 398,
+      "sha256": "1316c3d9ecf8365356d68ca77c9b6a001395465b1627a6602222611690967321"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CHECKLISTS/VIDEO-PRODUCTION.md",
+      "bytes": 520,
+      "sha256": "a06520ccd0eca9014088632bacc3fcfe4ad5db7b598ee766f6e076374f394007"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CONTRIBUTING.md",
+      "bytes": 374,
+      "sha256": "9944a36f274d2e6a2e303fc2c51d707f3d5b137c496ce790bfde48ede7685115"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CORE/CONNECTOR-INTELLIGENCE.md",
+      "bytes": 1160,
+      "sha256": "fbb0e3dbb4c1e4f654a35631a6f5bdff5698c456dcf9c8170a63d7d772c7cc0c"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CORE/PROJECT-MEMORY-TEMPLATE.md",
+      "bytes": 387,
+      "sha256": "52f0c07b916dde8ad4b07afe5309ace0180ef0d7e7196f5f5d4947ce4c6a87cc"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CORE/ROUTER.md",
+      "bytes": 1131,
+      "sha256": "253c05d0f87eadd9678b446fb5225d6ca0a053f13ed80b38e16020fc3ba79463"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CORE/SKILL-AUTHORING.md",
+      "bytes": 1234,
+      "sha256": "9fc769bc0a504bcf0e61a1515644beae260af3e73fb55e38613a7742d4838d95"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/CORE/TOKEN-INTELLIGENCE.md",
+      "bytes": 994,
+      "sha256": "a26dccd007aeb4621abfea58ef6f90768dcc0f760d0e002f515d81261ffc55f4"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/EVALUATIONS/QUALITY-GATES.md",
+      "bytes": 494,
+      "sha256": "5d8c0185360ee890f30ae6319079f5835d6b29abfa477131e11df050e4c45a81"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/EVALUATIONS/TEST-PROMPTS.md",
+      "bytes": 965,
+      "sha256": "b0d52cdda91fe12986e89cd91c36cdd3de6f2082a6a9613dd86e8a2e5b9a1189"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/LICENSE",
+      "bytes": 834,
+      "sha256": "9678dee84b95b50b3cc1db54766a41ccd4c53ff8d51d58e6b83d49070055d017"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/PACKAGE-MANIFEST.json",
+      "bytes": 1365,
+      "sha256": "827b632efc41451d98b90e89a966b9d08283dc6e8793e2fb7835271b8e9bec15"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/PROMPTS/CINEMATIC-WEBSITE.md",
+      "bytes": 1074,
+      "sha256": "418662a9dcba5ca3219e6d9e16bbb13d36c0778324d423e6106e6510987bd3e3"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/PROMPTS/VIDEO-BRIEF-TO-FINAL-PROMPT.md",
+      "bytes": 1137,
+      "sha256": "dc2cd5a48280c08f58f239fd72eb11151d3369b4d249ecec703f6dc438531857"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/README.md",
+      "bytes": 1625,
+      "sha256": "0b8e504e20a2fae680687fc0dd0e826cd3b23bb5f09f441eb66920143146d37a"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/REFERENCES/REFERENCE-INDEX.md",
+      "bytes": 2516,
+      "sha256": "bded4f5254dc048cdef1f5592612d9345e3e80d67e27bf89cd7cddbda6458c2f"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SKILL.md",
+      "bytes": 3225,
+      "sha256": "60a0cf69de5faae0037dc7564553d3b7cb01d3abad1210f8f9826e6004938bbf"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/ANDROID.md",
+      "bytes": 667,
+      "sha256": "fa5255e66490d16db3c5d78962340b6213863daabf0be2a4b6551e28de19b7ce"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/API-ENGINEERING.md",
+      "bytes": 585,
+      "sha256": "d18685f7e59db777f7f57ef1c8eabeab68f9b6cd9894634800ed05891ea0e01f"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/CINEMATIC-WEB-DESIGN.md",
+      "bytes": 1161,
+      "sha256": "da88b2a10b6a80c57ebdc94f615321f98d5f2e6b4726625b8086ef8c34dc9859"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/QUALITY.md",
+      "bytes": 351,
+      "sha256": "fe2dd8e0c68c1d86417dc38fc1a0fd7592149addcfa5e4144d957b0959410b52"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/RESEARCH.md",
+      "bytes": 418,
+      "sha256": "8b371b598d69d03ae7eab6c6a1ca16272886e058afc6151e80b60473532b773e"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/REVERSE-ENGINEERING.md",
+      "bytes": 1222,
+      "sha256": "6975c78bc77d62d2957baa7745ac2060e167056b3ab9e0880a9457970cf86941"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/SECURITY.md",
+      "bytes": 395,
+      "sha256": "96e31a6e378cae2c4939446b5c5e943fd12e053df901a548b29a6d07cdcbbca1"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/SPECIALISTS/SOFTWARE-ENGINEERING.md",
+      "bytes": 715,
+      "sha256": "c2a7afb2dfecdd0fadc65f94a7535d10e3fb0710fab9ad021d00687edf541d33"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/AI-VIDEO-GENERATION.md",
+      "bytes": 1047,
+      "sha256": "c9dbe791beffde8bad686327829eca14a297eab4fdac3214b61e3ff0c0c89c1b"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/AUDIO-AND-CAPTIONS.md",
+      "bytes": 679,
+      "sha256": "6cc0bc6c5a9b6447c8aaa364135450fb304212ac0485315de9a4176f2b4d2abb"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/BLENDER-3D-PRODUCTION.md",
+      "bytes": 810,
+      "sha256": "b231dbcbe177a4b9175af469b31c968c7e476e99f398a2ab213161bab1dbaa1c"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/CODE-ANIMATION.md",
+      "bytes": 1044,
+      "sha256": "00bc904c8fff41cac9ee821c6bc37fb6f9f20fc8c543593302802b022d3718c5"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/FFMPEG-COOKBOOK.md",
+      "bytes": 1051,
+      "sha256": "5936a1df11f9ec8459c08abc896c406de83b793f2107db1bf471389be389a9fc"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/FOOTAGE-EDITING.md",
+      "bytes": 1374,
+      "sha256": "09157b2b4ddf59e76c013c49b97df8eb6edef0bfe56c9a472f4fb26581f38344"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/VIDEO-FROM-ZERO.md",
+      "bytes": 1873,
+      "sha256": "97dadb31cab89a52390b0c6f1e5f464a3fb40298240fa5bca75929cfe4191d03"
+    },
+    {
+      "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V2/VIDEO/VIDEO-QA.md",
+      "bytes": 836,
+      "sha256": "77d8c53745e2c46ae260a567a0c2e1e102eb89985e245cdb14b61314799b0788"
+    },
+    {
+      "path": "ARCHIVE/README.md",
+      "bytes": 367,
+      "sha256": "63ea18abb9aa862b4a036f7287e3c6b8fa146590fbc520c90cdddad4b20579c9"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1093,
+      "sha256": "ef5d0c308b24b7c9afb26d49c0c40af84a50e8d0cbd763d86fbfae683b58820b"
+    },
+    {
+      "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
+      "bytes": 473,
+      "sha256": "c51bf26a3574c0fe06d2462845fbdfa1710fdaba4b5794223a491554208af722"
+    },
+    {
+      "path": "CHECKLISTS/AI-AGENT-DELIVERY.md",
+      "bytes": 396,
+      "sha256": "5e4540b36fd1d56c842b55272579a0cbaaac268f06c975a7e8e689728660d332"
+    },
+    {
+      "path": "CHECKLISTS/RELEASE.md",
+      "bytes": 376,
+      "sha256": "f80bd0833a3e4eba02644446b2fa628b1a5134b467f8d425fa68628f105eff01"
+    },
+    {
+      "path": "CHECKLISTS/SECURITY.md",
+      "bytes": 434,
+      "sha256": "fb6f65aca1e4717233fd0e9bd09db27440db6081a4190fe47a0a3e5c1ea1f230"
+    },
+    {
+      "path": "CHECKLISTS/SKILL-PUBLISHING.md",
+      "bytes": 611,
+      "sha256": "87815d1527f85e308eb5802645e0b0aca3486f34249b3c9f6eae56f6c0afe4c0"
+    },
+    {
+      "path": "CHECKLISTS/SOFTWARE-QUALITY.md",
+      "bytes": 398,
+      "sha256": "1316c3d9ecf8365356d68ca77c9b6a001395465b1627a6602222611690967321"
+    },
+    {
+      "path": "CHECKLISTS/SOFTWARE-TESTING.md",
+      "bytes": 490,
+      "sha256": "bc9fdb800412ff474c55f3052ac49c64534bb52c7ef6fde64e92d9e8122bccdb"
+    },
+    {
+      "path": "CHECKLISTS/VIDEO-PRODUCTION.md",
+      "bytes": 520,
+      "sha256": "a06520ccd0eca9014088632bacc3fcfe4ad5db7b598ee766f6e076374f394007"
+    },
+    {
+      "path": "CHECKLISTS/WEBSITE-QUALITY.md",
+      "bytes": 608,
+      "sha256": "ef0e4409fd2d0f5a7077dde526e813547bd1c93e6443172f19e407014695f2b6"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 254,
+      "sha256": "1a04977d19fe3f3d8334370480d26edc7aad582a3da4ae63368adf413e5cb946"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 347,
+      "sha256": "cb08853788c72053dfa91a19ce9423c8073783af0de9222de39474d10f82e092"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1246,
+      "sha256": "d0e492ee196eee5e59f8e5c6dd031f30258f28e96a84680052277382cc1bb703"
+    },
+    {
+      "path": "CORE/CONNECTOR-INTELLIGENCE.md",
+      "bytes": 1118,
+      "sha256": "bb30b4a85986c2c57e9c966c2a3c1e55ccd58579db202aa8fcc2c4b21087753f"
+    },
+    {
+      "path": "CORE/OPERATING-MODEL.md",
+      "bytes": 1126,
+      "sha256": "53a3736f4886d19766acbb02e1972525207f116462b16bfc0fb271db262064d2"
+    },
+    {
+      "path": "CORE/PROJECT-MEMORY-TEMPLATE.md",
+      "bytes": 617,
+      "sha256": "a569e6051cf93b6d18d92436e495a1e4c52d9df760c2d12b64330d975069bde2"
+    },
+    {
+      "path": "CORE/PROJECT-MEMORY.md",
+      "bytes": 631,
+      "sha256": "1302f60a21299965225915b27814bb8edb95224a4c02c375bb0d6346908be835"
+    },
+    {
+      "path": "CORE/ROUTER.md",
+      "bytes": 1949,
+      "sha256": "51fb5fbbc0fe182e56512ccc40ed88ac9f7023c525c65fd5f39ae21ddf9ecbc5"
+    },
+    {
+      "path": "CORE/SKILL-AUTHORING.md",
+      "bytes": 849,
+      "sha256": "eb5aba9a87cdcf832d113590415e8ca904d519f6491299cc6f3054049e8faaa3"
+    },
+    {
+      "path": "CORE/TOKEN-INTELLIGENCE.md",
+      "bytes": 2240,
+      "sha256": "8c5dcfd5e2577d5eb2806fd15b1843e747f983298601c28b5389ca828fc85eca"
+    },
+    {
+      "path": "CORE/TOOL-AND-CONNECTOR-INTELLIGENCE.md",
+      "bytes": 2172,
+      "sha256": "3c5cc48dfe850ba41393649bc1736d7ea21c7a0d44cd75760537897de86989e3"
+    },
+    {
+      "path": "EVALUATIONS/QUALITY-GATES.md",
+      "bytes": 494,
+      "sha256": "5d8c0185360ee890f30ae6319079f5835d6b29abfa477131e11df050e4c45a81"
+    },
+    {
+      "path": "EVALUATIONS/QUALITY-SCORE.md",
+      "bytes": 811,
+      "sha256": "de0d7a539602852a0ca641503223d8b1520270e8cd791d7b9eed953475925236"
+    },
+    {
+      "path": "EVALUATIONS/REGRESSION-SUITE.md",
+      "bytes": 1111,
+      "sha256": "00352e803dcd7665f3a077e9436f293f8684270eb14417e00c2c12c5056fbfe8"
+    },
+    {
+      "path": "EVALUATIONS/TEST-CASES.md",
+      "bytes": 1157,
+      "sha256": "27af99c444aab13165bde875b0c12b97595077315b904adfe22bdf75e55c4c45"
+    },
+    {
+      "path": "EVALUATIONS/TEST-PROMPTS.md",
+      "bytes": 965,
+      "sha256": "b0d52cdda91fe12986e89cd91c36cdd3de6f2082a6a9613dd86e8a2e5b9a1189"
+    },
+    {
+      "path": "KNOWLEDGE/FUNDAMENTALS.md",
+      "bytes": 1209,
+      "sha256": "041ac37c0db0f3443eedbd39014630a10ee5ed4ca214f870c4b9ebe7953bcf77"
+    },
+    {
+      "path": "KNOWLEDGE/WEB-3D-PLAYBOOK.md",
+      "bytes": 1177,
+      "sha256": "91d65274376c34f8d1d03b7e3ce5c49733ca4b551822fa57d4a9bb81a317cc83"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 834,
+      "sha256": "9678dee84b95b50b3cc1db54766a41ccd4c53ff8d51d58e6b83d49070055d017"
+    },
+    {
+      "path": "PROMPTS/CINEMATIC-WEBSITE-PROMPT.md",
+      "bytes": 2306,
+      "sha256": "1f3be945bb903a82bfd34676287734d647e98b4804539b7169ca270dfd912688"
+    },
+    {
+      "path": "PROMPTS/CINEMATIC-WEBSITE.md",
+      "bytes": 1074,
+      "sha256": "418662a9dcba5ca3219e6d9e16bbb13d36c0778324d423e6106e6510987bd3e3"
+    },
+    {
+      "path": "PROMPTS/MASTER-ENGINEERING-PROMPT.md",
+      "bytes": 680,
+      "sha256": "920235e36457a5c6928ec9f87579a604281e972043034b87ea23c24633b8aad8"
+    },
+    {
+      "path": "PROMPTS/REVERSE-ENGINEERING-PROMPT.md",
+      "bytes": 482,
+      "sha256": "9292863f1f6df33f4a37ce868fb734bfb948d763ed01d52f30bad2b3cf043323"
+    },
+    {
+      "path": "PROMPTS/SOFTWARE-PROJECT-PROMPT.md",
+      "bytes": 522,
+      "sha256": "d0268a20d4574c86aad1964701275cd60a56abf6d79b230c76f4abff205a78bd"
+    },
+    {
+      "path": "PROMPTS/VIDEO-BRIEF-TO-FINAL-PROMPT.md",
+      "bytes": 1137,
+      "sha256": "dc2cd5a48280c08f58f239fd72eb11151d3369b4d249ecec703f6dc438531857"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7592,
+      "sha256": "7679b23db9fb567b20d378c3b454b9317b8daea305adac6ba49b5918cedf8e44"
+    },
+    {
+      "path": "REFERENCES/REFERENCE-INDEX.md",
+      "bytes": 2070,
+      "sha256": "9325e7c285d6be44ede742630457d59114e3883840e10779974862712b7c1e43"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 799,
+      "sha256": "7559815361fbce56f9394d0a56e59d6d90f55e5676700667de941f52f46f44df"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4165,
+      "sha256": "70d9ef4d36e190d3c5b9d16cab016bcac6f136a23f1baf9ee8ba3af90417b196"
+    },
+    {
+      "path": "SPECIALISTS/ANDROID.md",
+      "bytes": 1044,
+      "sha256": "8d28da3046ec69f7f2ed68d9d6ff771a1b876e428ba81fb165bd311adacd789a"
+    },
+    {
+      "path": "SPECIALISTS/API-ENGINEERING.md",
+      "bytes": 585,
+      "sha256": "d18685f7e59db777f7f57ef1c8eabeab68f9b6cd9894634800ed05891ea0e01f"
+    },
+    {
+      "path": "SPECIALISTS/API-INTELLIGENCE.md",
+      "bytes": 721,
+      "sha256": "0d0e196358637055f5792411dec1e2ef614d20a49930c02ce1d4b115085f6f8c"
+    },
+    {
+      "path": "SPECIALISTS/BUSINESS-INTELLIGENCE.md",
+      "bytes": 612,
+      "sha256": "b503f8fcabd10d4021432916366881d251e611abb0b3255f15d527e61cd2609e"
+    },
+    {
+      "path": "SPECIALISTS/CINEMATIC-WEB-DESIGN.md",
+      "bytes": 2042,
+      "sha256": "159304af71494573640c7ede4eb045b1c58603abf6a1df3c1535a19875011487"
+    },
+    {
+      "path": "SPECIALISTS/QUALITY-ASSURANCE.md",
+      "bytes": 761,
+      "sha256": "662abac2c05be3e3935c8c3d45116740e52b38d2a236042a438a3759052064da"
+    },
+    {
+      "path": "SPECIALISTS/QUALITY.md",
+      "bytes": 351,
+      "sha256": "fe2dd8e0c68c1d86417dc38fc1a0fd7592149addcfa5e4144d957b0959410b52"
+    },
+    {
+      "path": "SPECIALISTS/RESEARCH.md",
+      "bytes": 662,
+      "sha256": "9a143e4d7358ba733f6a83c887f1714df63eedf862d77c0ed1bceab2e8b87fe6"
+    },
+    {
+      "path": "SPECIALISTS/REVERSE-ENGINEERING.md",
+      "bytes": 2106,
+      "sha256": "d7b98813e9c69829dcc63917cee3005dc384e43d0f474b43d3dba41b4ca4ae80"
+    },
+    {
+      "path": "SPECIALISTS/SECURITY-AUDIT.md",
+      "bytes": 875,
+      "sha256": "56380cfafd7a19252282f1e44a15cc2945fdf0985dcd74477c0cad279e2e3c40"
+    },
+    {
+      "path": "SPECIALISTS/SECURITY.md",
+      "bytes": 395,
+      "sha256": "96e31a6e378cae2c4939446b5c5e943fd12e053df901a548b29a6d07cdcbbca1"
+    },
+    {
+      "path": "SPECIALISTS/SOFTWARE-ENGINEERING.md",
+      "bytes": 1157,
+      "sha256": "d4d9da6164d1f37d209afc04ba579173d1346d6370836c12d6d7693e196e466a"
+    },
+    {
+      "path": "SPECIALISTS/VIDEO-DIRECTOR.md",
+      "bytes": 460,
+      "sha256": "97776e58ce2199522bd23cf726729cce49b98873497b4dbf75a8ee0d29470c00"
+    },
+    {
+      "path": "SUPPORT.md",
+      "bytes": 298,
+      "sha256": "d2cc39c0677aa079be6a2184716ad8687d5c334b53e56e78d41f037993006a74"
+    },
+    {
+      "path": "TOOLS/README.md",
+      "bytes": 604,
+      "sha256": "78415d1667a5859da2b748b88a26a8d2aad7f8787a2ddde52553f976957ad5b8"
+    },
+    {
+      "path": "VIDEO/AI-VIDEO-GENERATION.md",
+      "bytes": 1047,
+      "sha256": "c9dbe791beffde8bad686327829eca14a297eab4fdac3214b61e3ff0c0c89c1b"
+    },
+    {
+      "path": "VIDEO/AUDIO-AND-CAPTIONS.md",
+      "bytes": 679,
+      "sha256": "6cc0bc6c5a9b6447c8aaa364135450fb304212ac0485315de9a4176f2b4d2abb"
+    },
+    {
+      "path": "VIDEO/BLENDER-3D-PRODUCTION.md",
+      "bytes": 810,
+      "sha256": "b231dbcbe177a4b9175af469b31c968c7e476e99f398a2ab213161bab1dbaa1c"
+    },
+    {
+      "path": "VIDEO/CODE-ANIMATION.md",
+      "bytes": 1044,
+      "sha256": "00bc904c8fff41cac9ee821c6bc37fb6f9f20fc8c543593302802b022d3718c5"
+    },
+    {
+      "path": "VIDEO/FFMPEG-COOKBOOK.md",
+      "bytes": 1051,
+      "sha256": "5936a1df11f9ec8459c08abc896c406de83b793f2107db1bf471389be389a9fc"
+    },
+    {
+      "path": "VIDEO/FOOTAGE-EDITING.md",
+      "bytes": 1374,
+      "sha256": "09157b2b4ddf59e76c013c49b97df8eb6edef0bfe56c9a472f4fb26581f38344"
+    },
+    {
+      "path": "VIDEO/README.md",
+      "bytes": 540,
+      "sha256": "e5150d340f7bf6a0e9cdb1d25b3e494333063f1781130ab25d2af5a872a2d1ad"
+    },
+    {
+      "path": "VIDEO/VIDEO-FROM-ZERO.md",
+      "bytes": 1873,
+      "sha256": "97dadb31cab89a52390b0c6f1e5f464a3fb40298240fa5bca75929cfe4191d03"
+    },
+    {
+      "path": "VIDEO/VIDEO-QA.md",
+      "bytes": 836,
+      "sha256": "77d8c53745e2c46ae260a567a0c2e1e102eb89985e245cdb14b61314799b0788"
+    },
+    {
+      "path": "WORKFLOWS/AUTONOMOUS-DEVELOPMENT.md",
+      "bytes": 526,
+      "sha256": "052e9bce95017326b996141e25caf23c84a73089cd20f4e98b077ae0ab746e65"
+    },
+    {
+      "path": "WORKFLOWS/RESEARCH-AND-SOURCE-VERIFICATION.md",
+      "bytes": 535,
+      "sha256": "20b415abe61bd5ab41576a503401f8f4abc2abb21a371b4bf8f66f865723069b"
+    },
+    {
+      "path": "WORKFLOWS/REVERSE-ENGINEERING.md",
+      "bytes": 524,
+      "sha256": "d2da3caa439ce38aa0a1b0c79d6b6880a0dcf7eb778a97e1353acf5f2594ad9c"
+    },
+    {
+      "path": "WORKFLOWS/SAFE-REPOSITORY-UPDATE.md",
+      "bytes": 546,
+      "sha256": "fd6c077ecbb948da6d67613aec41e338807cf5310b3837ac66f36297227cbce8"
+    },
+    {
+      "path": "WORKFLOWS/WEBSITE-PRODUCTION.md",
+      "bytes": 716,
+      "sha256": "664a22f0068d9d0ec9e5e7cc04ffae2335f49f18f42c148bfa3a004908b4abaf"
+    },
+    {
+      "path": "docs/ADDITIVE-STRUCTURE-POLICY.md",
+      "bytes": 1310,
+      "sha256": "d2762bd2f0af33d8374066cd444c081bc47d95b615ceac1413d75b8377eb389e"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 772,
+      "sha256": "c542a2e68d3a76cf3074b3bfa59ed8178ef6c832d22a75376084416afc5e5aaa"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "bytes": 809,
+      "sha256": "a91857035f5debe1e8a58854507d44760f5bf75b640141cb03ff358cfff16664"
+    },
+    {
+      "path": "docs/MODULE-MIGRATION-MAP.md",
+      "bytes": 1137,
+      "sha256": "40cad802a1b2d6bef3e8c716b9ae06a07fc26881c21bb6544981ada4c5729b96"
+    },
+    {
+      "path": "docs/QUALITY-AND-EVIDENCE.md",
+      "bytes": 601,
+      "sha256": "ffb6d4ba7917ad4f7c43edc3d9dd7624c7e1f30730e4f68d679e525655c4ec37"
+    },
+    {
+      "path": "docs/RELEASE-AND-VERSIONING.md",
+      "bytes": 517,
+      "sha256": "8d43111a2e42c4cdd5892dd78422dff0dd9e216b906bc105818e4e37a44b3cb3"
+    },
+    {
+      "path": "portal/README.md",
+      "bytes": 646,
+      "sha256": "266bdfb1c925251a1573ba9cd00ffabbc8babc3a17d5cd12cc585551fde5e80f"
+    },
+    {
+      "path": "portal/index.html",
+      "bytes": 6097,
+      "sha256": "0e11266facfd6d606e022378417d658947064e39e4849f91b58fc5722cb140c0"
+    },
+    {
+      "path": "portal/script.js",
+      "bytes": 2106,
+      "sha256": "03a52d768d2f34cc8be6f8cfe00d1ab3bf0287714b3cf2d01b1a1aacf4a156b3"
+    },
+    {
+      "path": "portal/styles.css",
+      "bytes": 9316,
+      "sha256": "ab75426931cbf1c5288f11587f1c95f3d4877ab10a9653efae13df12eab15668"
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "bytes": 840,
+      "sha256": "ecad12f00cce87f38c822b4496187fd8e46b38408bdd99fa113ae5e513997dbc"
+    },
+    {
+      "path": "scripts/check_additive_changes.py",
+      "bytes": 1494,
+      "sha256": "32af553adcbf3ce8e01d95deac2d6be1de93e01140cda42e72c77895f2ad1918"
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "bytes": 1998,
+      "sha256": "e6e16857d897b50c948af227fb6c3cd1fff8da76dd75475994fd71a12fcd2a08"
+    },
+    {
+      "path": "tests/test_package.py",
+      "bytes": 1338,
+      "sha256": "4aaf1c12448062714f192f476cb8468b2b39a4819a361fcf98a32ba39502465b"
+    }
+  ]
+}

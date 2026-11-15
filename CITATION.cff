@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the repository."
+title: "Engineering Creative AI"
+version: 3.0.0
+type: software
+repository-code: "https://github.com/LLGGJ/engineering-creative-ai"
+license: MIT
+authors:
+  - name: "LLGGJ"

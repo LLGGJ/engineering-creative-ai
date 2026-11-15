@@ -34,8 +34,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 674,
-      "sha256": "548dc8efc5f7f7d1f23f8085f7a0c816f31cc18bc02f98ca7f3c7add1881eb33"
+      "bytes": 1035,
+      "sha256": "5c780d31df5c5e0c41b15b96523758750aeb7f38f320a3ee86e3072b75df4ec4"
     },
     {
       "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CHANGELOG.md",
@@ -454,8 +454,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 1246,
-      "sha256": "d0e492ee196eee5e59f8e5c6dd031f30258f28e96a84680052277382cc1bb703"
+      "bytes": 1591,
+      "sha256": "c77fbd5abd56d346c70970df037693760d675242eae3c47ad6f144a125d54e27"
     },
     {
       "path": "CORE/CONNECTOR-INTELLIGENCE.md",
@@ -479,8 +479,8 @@
     },
     {
       "path": "CORE/ROUTER.md",
-      "bytes": 3807,
-      "sha256": "707550f1d3826c977a82dd263d588a3da420348152f320a152261b74f0efec7d"
+      "bytes": 3843,
+      "sha256": "06fe9b6218603c42e6b8e544f904952986bf147f42b252dc75a90c98f084e15d"
     },
     {
       "path": "CORE/SKILL-AUTHORING.md",
@@ -569,8 +569,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9035,
-      "sha256": "56ce20957d98ed98207b032d41a0d19ca2709b702bd52fd0421370cd435f876b"
+      "bytes": 9117,
+      "sha256": "27284242938dee5c78fd48bec1dbc3b45d2f7d0e72e54aa4234ee3ad861f97db"
     },
     {
       "path": "REFERENCES/REFERENCE-INDEX.md",
@@ -579,8 +579,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 799,
-      "sha256": "7559815361fbce56f9394d0a56e59d6d90f55e5676700667de941f52f46f44df"
+      "bytes": 940,
+      "sha256": "34cd77c310549a45962dde5affb9d007d69c0ab209ddfc6d8e0cf9a35db4922e"
     },
     {
       "path": "SKILL.md",
@@ -589,8 +589,8 @@
     },
     {
       "path": "SPECIALISTS/AI-IMAGE-ANALYSIS.md",
-      "bytes": 1542,
-      "sha256": "387393be3d71906716e9e7dd1ad9428a86c231d9fe3ab2fa99350bafac6cf59d"
+      "bytes": 1546,
+      "sha256": "f22e38ff935c8f406f19d47a42e19494ced8bcc24f46d005b4b3d6f45a2e8e3d"
     },
     {
       "path": "SPECIALISTS/ANDROID.md",
@@ -619,8 +619,8 @@
     },
     {
       "path": "SPECIALISTS/DOCUMENT-PROCESSING.md",
-      "bytes": 1319,
-      "sha256": "c269e498f6ea3543ec7a649f63d668d0900ee944cc4b5550a432379f640ae95f"
+      "bytes": 1323,
+      "sha256": "7d0e04bf4c874190b71245b976ed6c1878bc1b6764d3e5f647d06450365ca6d2"
     },
     {
       "path": "SPECIALISTS/QUALITY-ASSURANCE.md",
@@ -664,8 +664,8 @@
     },
     {
       "path": "SUPPORT.md",
-      "bytes": 298,
-      "sha256": "d2cc39c0677aa079be6a2184716ad8687d5c334b53e56e78d41f037993006a74"
+      "bytes": 763,
+      "sha256": "db5eb6b7c21f80d9cb96c4499a689ea1b45d65a5abd8cf25a951e2d376cfcc23"
     },
     {
       "path": "TOOLS/README.md",

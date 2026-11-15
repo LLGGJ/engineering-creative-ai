@@ -1,0 +1,28 @@
+name: Build landing page
+on:
+  push:
+    paths:
+      - "landing-page/**"
+      - ".github/workflows/build-landing-page.yml"
+  pull_request:
+    paths:
+      - "landing-page/**"
+      - ".github/workflows/build-landing-page.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble static site
+        run: |
+          mkdir -p landing-page/dist
+          cp landing-page/index.html landing-page/styles.css landing-page/scene.js landing-page/dist/
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: engineering-creative-ai-landing-page
+          path: landing-page/dist/
+          if-no-files-found: error

@@ -1,5 +1,12 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Landing page cinematográfica independente, com cena 3D Three.js, cards por disciplina e fallback para movimento reduzido ou indisponibilidade de WebGL.
+- Workflow do GitHub Actions para empacotar a landing page como artifact estático, sem publicação automática.
+
 ## [3.0.3] - 2026-11-15
 
 ### Changed

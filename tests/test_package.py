@@ -23,6 +23,21 @@ class PackageStructureTests(unittest.TestCase):
         css = (ROOT / 'portal' / 'styles.css').read_text(encoding='utf-8')
         self.assertIn('prefers-reduced-motion', css)
 
+    def test_landing_page_has_three_dimensional_scene_and_fallback(self):
+        html = (ROOT / 'landing-page' / 'index.html').read_text(encoding='utf-8')
+        css = (ROOT / 'landing-page' / 'styles.css').read_text(encoding='utf-8')
+        script = (ROOT / 'landing-page' / 'scene.js').read_text(encoding='utf-8')
+        self.assertIn('id="system-scene"', html)
+        self.assertIn('prefers-reduced-motion', css)
+        self.assertIn('new THREE.WebGLRenderer', script)
+        self.assertIn('scene-fallback-active', script)
+
+    def test_landing_page_workflow_packages_static_artifact(self):
+        workflow = (ROOT / '.github' / 'workflows' / 'build-landing-page.yml').read_text(encoding='utf-8')
+        self.assertIn('landing-page/dist/', workflow)
+        self.assertIn('actions/upload-artifact@v4', workflow)
+        self.assertNotIn('deploy-pages', workflow)
+
     def test_skill_has_frontmatter(self):
         text = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
         self.assertTrue(text.startswith('---\n'))

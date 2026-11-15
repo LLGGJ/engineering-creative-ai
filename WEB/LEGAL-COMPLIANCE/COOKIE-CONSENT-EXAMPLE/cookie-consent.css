@@ -1,0 +1,26 @@
+.eca-consent { font: 15px/1.5 system-ui, sans-serif; color: #17211d; }
+.eca-consent [hidden] { display: none !important; }
+.eca-consent__banner { position: fixed; z-index: 99999; inset: auto 16px 16px; display: flex; gap: 24px; align-items: center; justify-content: space-between; max-width: 980px; margin-inline: auto; padding: 20px; background: #fff; border: 1px solid #d7ded9; border-radius: 16px; box-shadow: 0 12px 48px #0003; }
+.eca-consent__copy { max-width: 560px; }
+.eca-consent__copy p, .eca-consent__panel p { margin: 6px 0 0; color: #48554e; font-size: 14px; }
+.eca-consent a { color: #075f46; text-decoration: underline; }
+.eca-consent__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.eca-consent button { min-height: 42px; padding: 9px 13px; border: 1px solid #9aa79f; border-radius: 9px; background: #fff; color: #17211d; font: inherit; font-size: 13px; cursor: pointer; }
+.eca-consent button:focus-visible, .eca-consent input:focus-visible { outline: 3px solid #176bce; outline-offset: 3px; }
+.eca-consent button.eca-primary { background: #123f31; color: #fff; border-color: #123f31; }
+.eca-consent__reopen { position: fixed; z-index: 99998; left: 16px; bottom: 16px; box-shadow: 0 4px 20px #0002; }
+.eca-consent__dialog { position: fixed; z-index: 100000; inset: 0; display: grid; place-items: center; padding: 16px; background: #07130dcc; }
+.eca-consent__panel { width: min(100%, 520px); max-height: 90vh; overflow: auto; padding: 24px; border-radius: 16px; background: #fff; box-shadow: 0 18px 60px #0005; }
+.eca-consent__panel h2 { margin: 0; font-size: 22px; }
+.eca-category { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e1e7e3; }
+.eca-category span { display: grid; gap: 3px; }
+.eca-category small { color: #59665e; }
+.eca-category input { width: 20px; height: 20px; accent-color: #145d46; }
+.eca-consent__panel form { margin-top: 18px; }
+.eca-consent__panel .eca-consent__actions { justify-content: flex-end; margin-top: 18px; }
+@media (max-width: 720px) {
+  .eca-consent__banner { inset: auto 10px 10px; display: block; padding: 16px; }
+  .eca-consent__actions { display: grid; grid-template-columns: 1fr; margin-top: 14px; }
+  .eca-consent__actions button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .eca-consent *, .eca-consent *::before, .eca-consent *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }

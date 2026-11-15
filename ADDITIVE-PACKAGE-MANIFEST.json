@@ -1,0 +1,77 @@
+{
+  "package": "Engineering Creative AI",
+  "version": "3.1.0-additive-overlay",
+  "base_repository": "https://github.com/LLGGJ/engineering-creative-ai",
+  "base_commit_observed": "e737eef3c44b15bd8d32330b8b17375fbdce40fd",
+  "policy": "Additive only: this archive contains new files only and does not replace existing repository files.",
+  "files": [
+    {
+      "path": ".github/workflows/deploy-github-pages.yml",
+      "sha256": "8e8d2b11a4b0863c5c253c36db443e6fd8d02e3c24e8f43b77e7ee5559d3ef06"
+    },
+    {
+      "path": "PROMPTS/BUSINESS-WEBSITE-PRIVACY-COMPLIANCE-PROMPT.md",
+      "sha256": "af042591fb5a4def96f309dd2c7bae2d0b997ca25c549039d37e7a20d6648632"
+    },
+    {
+      "path": "SPECIALISTS/PRIVACY-LGPD-COMPLIANCE.md",
+      "sha256": "d6b10cd1e79b28e48a42909dc4a677e818f4a75627bc25c9a8c1a3227de3ab95"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COMPLIANCE-REVIEW-CHECKLIST.md",
+      "sha256": "927cf6c8b12ad8ac4b867bcdd83ebd997e535b76003f3b686ec04a4863ca10f6"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-EXAMPLE/cookie-consent.css",
+      "sha256": "0c3d2bf11375cc26541f327c6b4052a20399bf1665a06fd76c4b28ba81be812b"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-EXAMPLE/cookie-consent.js",
+      "sha256": "cec1b5b695d188941a1bede830defe18dada5abe8fbaf90f95e5f0a0bc58afad"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-EXAMPLE/demo.html",
+      "sha256": "b73070e082a47b51067f5fd008573ed91c6c84baba8ef1a7533ea40b80b97dc1"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-IMPLEMENTATION.md",
+      "sha256": "446e39d21b73cc967ab1e1615a93f9f6630fa23fef0fb803887fbfd6c074d4f4"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-REQUIREMENTS.md",
+      "sha256": "1c2fc493f1ce4ecb420154dbb19641f5a21e4de555d670f03231c75312896fc8"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-POLICY-TEMPLATE.md",
+      "sha256": "cb1192f9a95330ae15cb1f4480cf8ca4083bad49a905bbeb359d9106ce88b317"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/DATA-MAPPING-CHECKLIST.md",
+      "sha256": "0f8dbbc4e32101bd32e9470e2a94547b98e8fa03d8bed5cffc6ca824caecd344"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/LGPD-BRAZIL.md",
+      "sha256": "94d82b8eef8b14eb08cc14d9acde560b462c031804cca89f3f7217e06dcdd535"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/PRIVACY-POLICY-TEMPLATE.md",
+      "sha256": "a3482b2812eba08bb78190faad92e07cb8d401978d88b7f4534de4fc94bdcb37"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/README.md",
+      "sha256": "3fcf3118d7095387ce2b87aa1176149679321d25414f917542b6348d893b5495"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/TERMS-OF-USE-TEMPLATE.md",
+      "sha256": "f5c7a6a44ce320890bffd9560056a8645ee36e40453e492c590f3f4b98f6482b"
+    },
+    {
+      "path": "WORKFLOWS/PRIVACY-AND-COOKIE-AUDIT.md",
+      "sha256": "59be7344d21f748d6e9ee5e2f57280474ae53b253e50c7c6504d85ecde493e45"
+    },
+    {
+      "path": "docs/GITHUB-PAGES-AND-LEGAL-MODULE-ADDENDUM.md",
+      "sha256": "d68441c546d867ddf6207fbb0aead786222f13b48728a9c416c925e683d3f32c"
+    }
+  ]
+}

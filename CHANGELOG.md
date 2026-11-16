@@ -7,6 +7,11 @@
 - Landing page cinematográfica independente, com cena 3D Three.js, cards por disciplina e fallback para movimento reduzido ou indisponibilidade de WebGL.
 - Workflow do GitHub Actions para empacotar a landing page como artifact estático, sem publicação automática.
 
+## [Unreleased]
+
+- README: banner SVG animado (`.github/assets/banner.svg`), badges de status dos workflows, seção de exemplos de pedidos e alertas de dica/aviso.
+- Manifesto regenerado com os novos arquivos; validação local passa.
+
 ## [3.0.3] - 2026-11-15
 
 ### Changed

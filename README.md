@@ -1,20 +1,23 @@
 <div align="center">
 
-# 🚀 ENGINEERING CREATIVE AI
+<img src=".github/assets/banner.svg" alt="Engineering Creative AI — banner animado" width="100%">
 
-### A modular engineering intelligence system for AI coding agents
+### 🧠 Um sistema modular de engenharia para agentes de IA
 
-**Reverse engineering · Software engineering · Android · APIs · Security · Cinematic web · Video production · Research · QA**
+**Engenharia reversa · Software · Android · APIs · Segurança · Web cinematográfica · Vídeo · Pesquisa · QA**
 
-[![Version](https://img.shields.io/badge/version-3.0.3-7c3aed?style=for-the-badge)](CHANGELOG.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
-[![Validation](https://img.shields.io/badge/package-validation-ready-0ea5e9?style=for-the-badge)](tests/)
+[![Version](https://img.shields.io/badge/versão-3.0.3-7c3aed?style=for-the-badge&logo=semanticrelease&logoColor=white)](CHANGELOG.md)
+[![License: MIT](https://img.shields.io/badge/licença-MIT-16a34a?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![Validate](https://img.shields.io/github/actions/workflow/status/LLGGJ/engineering-creative-ai/validate.yml?style=for-the-badge&label=validação&logo=githubactions&logoColor=white)](https://github.com/LLGGJ/engineering-creative-ai/actions/workflows/validate.yml)
+[![Landing](https://img.shields.io/github/actions/workflow/status/LLGGJ/engineering-creative-ai/build-landing-page.yml?style=for-the-badge&label=landing%20page&logo=githubactions&logoColor=white)](https://github.com/LLGGJ/engineering-creative-ai/actions/workflows/build-landing-page.yml)
 
 **Uma base modular de conhecimento, processos e ferramentas para transformar tarefas técnicas complexas em entregas verificáveis.**
 
-[Começar](#-início-rápido) · [Arquitetura](#-arquitetura) · [Módulos](#-módulos) · [Portal visual](portal/) · [Contribuir](CONTRIBUTING.md)
+🧭 [Começar](#-início-rápido) · 🏗️ [Arquitetura](#-arquitetura) · 🧩 [Módulos](#-módulos) · 💬 [Exemplos](#-exemplos-de-pedidos) · 🎬 [Portal](#-portal-visual) · 🤝 [Contribuir](CONTRIBUTING.md)
 
 </div>
+
+---
 
 > [!IMPORTANT]
 > Esta é uma **Skill/base de conhecimento**, não um modelo treinado, IDE ou agente autônomo por si só. Ela orienta um modelo compatível a escolher procedimentos, consultar módulos e agir com evidência.
@@ -91,6 +94,24 @@ Leia SKILL.md e CORE/ROUTER.md. Analise minha tarefa, escolha apenas os módulos
 faça um plano curto, execute o que estiver dentro das ferramentas disponíveis e valide o resultado.
 Separe fatos verificados, hipóteses e pontos não verificados. Não invente testes nem resultados.
 ```
+
+---
+
+## 💬 Exemplos de pedidos
+
+| Você pede | A skill tende a… |
+| --- | --- |
+| 🐛 "Esse endpoint retorna 500 às vezes, investiga" | 🔌 Carregar `API-INTELLIGENCE` e `SOFTWARE-ENGINEERING`, reproduzir e separar hipótese de fato |
+| 🌐 "Monta uma landing page com scroll animado" | 🎨 Carregar `CINEMATIC-WEB-DESIGN`, validar acessibilidade e `prefers-reduced-motion` |
+| 🔐 "Audita as permissões desse backend" | 🛡️ Carregar `SECURITY-AUDIT` e pedir autorização antes de qualquer teste ativo |
+| 🎞️ "Faz um roteiro de Shorts de 45 segundos" | 🎬 Carregar `VIDEO-FROM-ZERO` e entregar roteiro, storyboard e checklist de QA |
+| 📄 "Resume esse PDF e compara com o anexo" | 📑 Carregar `DOCUMENT-PROCESSING` e citar onde cada ponto aparece |
+
+> [!TIP]
+> Dê o contexto, o ambiente disponível e o resultado esperado. Quanto mais claro o pedido, menos módulos a skill precisa abrir.
+
+> [!WARNING]
+> A skill não concede permissões nem instala programas. Ações externas, publicações e dados sensíveis exigem autorização explícita.
 
 ---
 

@@ -3,7 +3,7 @@
   "version": "3.0.3",
   "release_date": "2026-11-15",
   "description": "Additive modular engineering knowledge system for AI coding agents, with preserved 1.x and 2.x baselines, cinematic portal and automated package validation.",
-  "file_count": 164,
+  "file_count": 190,
   "manifest_policy": "All files except this manifest are listed with byte count and SHA-256. file_count includes this manifest.",
   "compatibility_policy": "Additive: do not delete or rename published paths; preserve replaced legacy content and document migrations.",
   "files": [
@@ -23,6 +23,21 @@
       "sha256": "a544cda8f8055cc4f65d973c9e3da03d0eb740f8202987e8b8a82e54cf66d2c2"
     },
     {
+      "path": ".github/assets/banner.svg",
+      "bytes": 4799,
+      "sha256": "9dc58feeff34a08e03177a69080c869cb047c1c7101e75e8f8f0bf5d147c0c80"
+    },
+    {
+      "path": ".github/workflows/build-landing-page.yml",
+      "bytes": 769,
+      "sha256": "a4ee6c48d0cff702b18b34c391afa22bc06c4f6bf1db6412ba2e69013caf6ddc"
+    },
+    {
+      "path": ".github/workflows/deploy-github-pages.yml",
+      "bytes": 1086,
+      "sha256": "8e8d2b11a4b0863c5c253c36db443e6fd8d02e3c24e8f43b77e7ee5559d3ef06"
+    },
+    {
       "path": ".github/workflows/validate.yml",
       "bytes": 777,
       "sha256": "e5e451081a30ce1f82f344b5320c400c3c1683efbe57ef1dc6c3589da5a5f761"
@@ -33,9 +48,19 @@
       "sha256": "6c9f805742c3968170a85f2a29772dee654880be55e7b5b232106e068477e576"
     },
     {
+      "path": "ADDITIVE-PACKAGE-MANIFEST.json",
+      "bytes": 3090,
+      "sha256": "1e54b355ccc839a36ed21b84dc0beedeb0b045753ce4669115fdec75834efce4"
+    },
+    {
       "path": "AGENTS.md",
       "bytes": 1035,
       "sha256": "5c780d31df5c5e0c41b15b96523758750aeb7f38f320a3ee86e3072b75df4ec4"
+    },
+    {
+      "path": "APPLY-3.1.0-PATCH.py",
+      "bytes": 12144,
+      "sha256": "9bc1e2efee1b8e8ec3a842019179e7918ac68d5a6b65416dfc5447cfa4c4ff8b"
     },
     {
       "path": "ARCHIVE/PREVIOUS-BASELINES/BASELINE-V1/CHANGELOG.md",
@@ -394,8 +419,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2487,
-      "sha256": "0b7224a9fcad429284b1808b7e64c01259495403b506c710b0c7b2b7207e23c9"
+      "bytes": 3022,
+      "sha256": "c6cf4fd2f8da4ce745e464a462664b67c13c380415659a562ded6a7ae7b59d75"
     },
     {
       "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
@@ -538,6 +563,16 @@
       "sha256": "9678dee84b95b50b3cc1db54766a41ccd4c53ff8d51d58e6b83d49070055d017"
     },
     {
+      "path": "PATCH-INSTRUCTIONS.md",
+      "bytes": 945,
+      "sha256": "ff7abf7a54da5ecd65b1a2307f9eda5e34c47bd930e471bc5979bd1f8d13e469"
+    },
+    {
+      "path": "PROMPTS/BUSINESS-WEBSITE-PRIVACY-COMPLIANCE-PROMPT.md",
+      "bytes": 2598,
+      "sha256": "af042591fb5a4def96f309dd2c7bae2d0b997ca25c549039d37e7a20d6648632"
+    },
+    {
       "path": "PROMPTS/CINEMATIC-WEBSITE-PROMPT.md",
       "bytes": 2306,
       "sha256": "1f3be945bb903a82bfd34676287734d647e98b4804539b7169ca270dfd912688"
@@ -569,8 +604,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9117,
-      "sha256": "27284242938dee5c78fd48bec1dbc3b45d2f7d0e72e54aa4234ee3ad861f97db"
+      "bytes": 11759,
+      "sha256": "36098c2f74849e22f7b60722596c439f7b9e8883cc12fbd368ac2f5eef00f920"
     },
     {
       "path": "REFERENCES/REFERENCE-INDEX.md",
@@ -621,6 +656,11 @@
       "path": "SPECIALISTS/DOCUMENT-PROCESSING.md",
       "bytes": 1323,
       "sha256": "7d0e04bf4c874190b71245b976ed6c1878bc1b6764d3e5f647d06450365ca6d2"
+    },
+    {
+      "path": "SPECIALISTS/PRIVACY-LGPD-COMPLIANCE.md",
+      "bytes": 2588,
+      "sha256": "d6b10cd1e79b28e48a42909dc4a677e818f4a75627bc25c9a8c1a3227de3ab95"
     },
     {
       "path": "SPECIALISTS/QUALITY-ASSURANCE.md",
@@ -718,6 +758,66 @@
       "sha256": "77d8c53745e2c46ae260a567a0c2e1e102eb89985e245cdb14b61314799b0788"
     },
     {
+      "path": "WEB/LEGAL-COMPLIANCE/COMPLIANCE-REVIEW-CHECKLIST.md",
+      "bytes": 1875,
+      "sha256": "927cf6c8b12ad8ac4b867bcdd83ebd997e535b76003f3b686ec04a4863ca10f6"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-EXAMPLE/cookie-consent.css",
+      "bytes": 2506,
+      "sha256": "0c3d2bf11375cc26541f327c6b4052a20399bf1665a06fd76c4b28ba81be812b"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-EXAMPLE/cookie-consent.js",
+      "bytes": 7979,
+      "sha256": "cec1b5b695d188941a1bede830defe18dada5abe8fbaf90f95e5f0a0bc58afad"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-EXAMPLE/demo.html",
+      "bytes": 1256,
+      "sha256": "b73070e082a47b51067f5fd008573ed91c6c84baba8ef1a7533ea40b80b97dc1"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-IMPLEMENTATION.md",
+      "bytes": 2042,
+      "sha256": "446e39d21b73cc967ab1e1615a93f9f6630fa23fef0fb803887fbfd6c074d4f4"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-CONSENT-REQUIREMENTS.md",
+      "bytes": 2433,
+      "sha256": "1c2fc493f1ce4ecb420154dbb19641f5a21e4de555d670f03231c75312896fc8"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/COOKIE-POLICY-TEMPLATE.md",
+      "bytes": 1743,
+      "sha256": "cb1192f9a95330ae15cb1f4480cf8ca4083bad49a905bbeb359d9106ce88b317"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/DATA-MAPPING-CHECKLIST.md",
+      "bytes": 1231,
+      "sha256": "0f8dbbc4e32101bd32e9470e2a94547b98e8fa03d8bed5cffc6ca824caecd344"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/LGPD-BRAZIL.md",
+      "bytes": 4719,
+      "sha256": "94d82b8eef8b14eb08cc14d9acde560b462c031804cca89f3f7217e06dcdd535"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/PRIVACY-POLICY-TEMPLATE.md",
+      "bytes": 3207,
+      "sha256": "a3482b2812eba08bb78190faad92e07cb8d401978d88b7f4534de4fc94bdcb37"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/README.md",
+      "bytes": 2714,
+      "sha256": "3fcf3118d7095387ce2b87aa1176149679321d25414f917542b6348d893b5495"
+    },
+    {
+      "path": "WEB/LEGAL-COMPLIANCE/TERMS-OF-USE-TEMPLATE.md",
+      "bytes": 1761,
+      "sha256": "f5c7a6a44ce320890bffd9560056a8645ee36e40453e492c590f3f4b98f6482b"
+    },
+    {
       "path": "WORKFLOWS/AUTONOMOUS-DEVELOPMENT.md",
       "bytes": 526,
       "sha256": "052e9bce95017326b996141e25caf23c84a73089cd20f4e98b077ae0ab746e65"
@@ -726,6 +826,11 @@
       "path": "WORKFLOWS/IMAGE-DOCUMENT-PIPELINE.md",
       "bytes": 757,
       "sha256": "720ca54f8ce3c58ae4732409e5ff51956530025f8a4e3cfea8af1d40ea74787d"
+    },
+    {
+      "path": "WORKFLOWS/PRIVACY-AND-COOKIE-AUDIT.md",
+      "bytes": 1763,
+      "sha256": "59be7344d21f748d6e9ee5e2f57280474ae53b253e50c7c6504d85ecde493e45"
     },
     {
       "path": "WORKFLOWS/QUALITY-VERIFICATION.md",
@@ -763,6 +868,11 @@
       "sha256": "c542a2e68d3a76cf3074b3bfa59ed8178ef6c832d22a75376084416afc5e5aaa"
     },
     {
+      "path": "docs/GITHUB-PAGES-AND-LEGAL-MODULE-ADDENDUM.md",
+      "bytes": 1543,
+      "sha256": "d68441c546d867ddf6207fbb0aead786222f13b48728a9c416c925e683d3f32c"
+    },
+    {
       "path": "docs/INSTALLATION.md",
       "bytes": 809,
       "sha256": "a91857035f5debe1e8a58854507d44760f5bf75b640141cb03ff358cfff16664"
@@ -781,6 +891,26 @@
       "path": "docs/RELEASE-AND-VERSIONING.md",
       "bytes": 517,
       "sha256": "8d43111a2e42c4cdd5892dd78422dff0dd9e216b906bc105818e4e37a44b3cb3"
+    },
+    {
+      "path": "landing-page/README.md",
+      "bytes": 844,
+      "sha256": "9003ab3962c79806b471c97bd5223a1c464c3232502aa15ac53c59f46f52b26b"
+    },
+    {
+      "path": "landing-page/index.html",
+      "bytes": 13450,
+      "sha256": "9cab87c44ef13786f0abd9560b51eb0704ce08240ed09b14a185fcdbdaf40fcb"
+    },
+    {
+      "path": "landing-page/scene.js",
+      "bytes": 5365,
+      "sha256": "027df79fb6f8a5df0b31ba211e121604e2135aff6a58a18fc2766b5b34e912c1"
+    },
+    {
+      "path": "landing-page/styles.css",
+      "bytes": 19529,
+      "sha256": "9036d4525f9f94bac1c173d34439b1d9ec1db90cbd76795c05747fcd5e273367"
     },
     {
       "path": "portal/README.md",
@@ -819,8 +949,8 @@
     },
     {
       "path": "tests/test_package.py",
-      "bytes": 1769,
-      "sha256": "29b271791be9cc1f589a52effde524955778c55183b40804d5bfe746c7e162ed"
+      "bytes": 2645,
+      "sha256": "25156a8d8c1b63758af3e487cc6867c64611a2fef4815bfd6f56b2d8a923c1bc"
     }
   ]
 }

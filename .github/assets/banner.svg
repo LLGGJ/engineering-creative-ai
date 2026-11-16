@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">Engineering Creative AI</title>
+  <desc id="banner-desc">Banner animado: Engineering Creative AI, uma base modular para agentes de IA, com partículas flutuantes e destaques para software, APIs, segurança e vídeo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.55" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#042f2e"/>
+    </linearGradient>
+    <linearGradient id="title-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="0.5" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <linearGradient id="line-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="1"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font: 700 66px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: url(#title-grad); }
+    .subtitle { font: 400 24px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: #cbd5e1; }
+    .chip-text { font: 600 18px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: #0f172a; }
+    .particle { animation: float 7s ease-in-out infinite; }
+    .scan { animation: sweep 5s linear infinite; }
+    .chip { animation: pop 0.8s ease-out both; }
+    .rule { animation: grow 2.4s ease-out both; transform-origin: 600px 0; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); opacity: 0.35; }
+      50% { transform: translateY(-16px); opacity: 0.9; }
+    }
+    @keyframes sweep {
+      0% { transform: translateX(-300px); opacity: 0; }
+      15% { opacity: 0.5; }
+      85% { opacity: 0.5; }
+      100% { transform: translateX(1500px); opacity: 0; }
+    }
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes grow {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .particle, .scan, .chip, .rule { animation: none; }
+    }
+  </style>
+
+  <!-- fundo -->
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+
+  <!-- faixa de varredura -->
+  <rect class="scan" x="0" y="0" width="160" height="320" fill="#38bdf8" opacity="0.08"/>
+
+  <!-- partículas -->
+  <circle class="particle" cx="90" cy="70" r="5" fill="#a78bfa" style="animation-delay: 0s"/>
+  <circle class="particle" cx="210" cy="250" r="4" fill="#38bdf8" style="animation-delay: 1.2s"/>
+  <circle class="particle" cx="980" cy="60" r="6" fill="#6ee7b7" style="animation-delay: 0.6s"/>
+  <circle class="particle" cx="1120" cy="230" r="4" fill="#f0abfc" style="animation-delay: 2.1s"/>
+  <circle class="particle" cx="1040" cy="150" r="3" fill="#fde68a" style="animation-delay: 3.0s"/>
+  <circle class="particle" cx="160" cy="160" r="3" fill="#7dd3fc" style="animation-delay: 1.8s"/>
+
+  <!-- título -->
+  <text class="title" x="600" y="150" text-anchor="middle" filter="url(#glow)">ENGINEERING CREATIVE AI</text>
+  <text class="subtitle" x="600" y="196" text-anchor="middle">Uma base modular de conhecimento e execução para agentes de IA</text>
+
+  <!-- linha animada -->
+  <rect class="rule" x="300" y="222" width="600" height="3" rx="2" fill="url(#line-grad)"/>
+
+  <!-- chips coloridos -->
+  <g transform="translate(0,0)">
+    <g class="chip" style="animation-delay: 0.3s">
+      <rect x="318" y="248" width="150" height="34" rx="17" fill="#c4b5fd"/>
+      <text class="chip-text" x="393" y="272" text-anchor="middle">Software</text>
+    </g>
+    <g class="chip" style="animation-delay: 0.45s">
+      <rect x="484" y="248" width="110" height="34" rx="17" fill="#7dd3fc"/>
+      <text class="chip-text" x="539" y="272" text-anchor="middle">APIs</text>
+    </g>
+    <g class="chip" style="animation-delay: 0.6s">
+      <rect x="610" y="248" width="150" height="34" rx="17" fill="#6ee7b7"/>
+      <text class="chip-text" x="685" y="272" text-anchor="middle">Segurança</text>
+    </g>
+    <g class="chip" style="animation-delay: 0.75s">
+      <rect x="776" y="248" width="110" height="34" rx="17" fill="#f0abfc"/>
+      <text class="chip-text" x="831" y="272" text-anchor="middle">Vídeo</text>
+    </g>
+  </g>
+</svg>

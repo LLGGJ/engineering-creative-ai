@@ -3,7 +3,7 @@
   "version": "3.0.3",
   "release_date": "2026-11-15",
   "description": "Additive modular engineering knowledge system for AI coding agents, with preserved 1.x and 2.x baselines, cinematic portal and automated package validation.",
-  "file_count": 190,
+  "file_count": 192,
   "manifest_policy": "All files except this manifest are listed with byte count and SHA-256. file_count includes this manifest.",
   "compatibility_policy": "Additive: do not delete or rename published paths; preserve replaced legacy content and document migrations.",
   "files": [
@@ -29,8 +29,8 @@
     },
     {
       "path": ".github/workflows/build-landing-page.yml",
-      "bytes": 769,
-      "sha256": "a4ee6c48d0cff702b18b34c391afa22bc06c4f6bf1db6412ba2e69013caf6ddc"
+      "bytes": 811,
+      "sha256": "0efeb22ff06d266e4eeb5e2e1e874fa8bc6a5fe2f4ab26b116227a01eb043187"
     },
     {
       "path": ".github/workflows/deploy-github-pages.yml",
@@ -419,8 +419,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3223,
-      "sha256": "a6b3d66ad3c6423b8a4c2b88131e55e2fc6ae83e04c39c63648731bb124efd31"
+      "bytes": 3422,
+      "sha256": "dc4c7b046baf4dab91ffeec22e9112bec5d1e14dcf837d6f1fc293b469c9fd15"
     },
     {
       "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
@@ -898,9 +898,19 @@
       "sha256": "9003ab3962c79806b471c97bd5223a1c464c3232502aa15ac53c59f46f52b26b"
     },
     {
+      "path": "landing-page/app.js",
+      "bytes": 3156,
+      "sha256": "e1f1403a49b398f919c40b89ca9d4c996d7f9bf46523713089071e4bb24a7ea4"
+    },
+    {
       "path": "landing-page/index.html",
-      "bytes": 13450,
-      "sha256": "9cab87c44ef13786f0abd9560b51eb0704ce08240ed09b14a185fcdbdaf40fcb"
+      "bytes": 21543,
+      "sha256": "339289f96b00646ccce2e629995a51631751e1563c367e0a6bdc72ab9924ab83"
+    },
+    {
+      "path": "landing-page/llms.txt",
+      "bytes": 11016,
+      "sha256": "6449b10bcfbdd6589996690447c3cffd4e72a9ddcd497e76752c5535efd76921"
     },
     {
       "path": "landing-page/scene.js",
@@ -909,8 +919,8 @@
     },
     {
       "path": "landing-page/styles.css",
-      "bytes": 19529,
-      "sha256": "9036d4525f9f94bac1c173d34439b1d9ec1db90cbd76795c05747fcd5e273367"
+      "bytes": 23112,
+      "sha256": "e79d055b1b6d0e0dfc86e15469c6e277e9666ed86d744d270cc3efe018537318"
     },
     {
       "path": "portal/README.md",

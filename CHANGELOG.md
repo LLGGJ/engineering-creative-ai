@@ -12,6 +12,7 @@
 - README: banner SVG animado (`.github/assets/banner.svg`), badges de status dos workflows, seção de exemplos de pedidos e alertas de dica/aviso.
 - Manifesto regenerado com os novos arquivos; validação local passa.
 - README: seção de perguntas frequentes.
+- Landing page: módulos em cards com ícones Lucide, animações GSAP/ScrollTrigger e Lenis, seção de uso com Claude, botão de ZIP da branch main e `llms.txt` com o índice de todos os módulos.
 - Pages: o deploy exige que GitHub Pages esteja habilitado em Settings → Pages com fonte "GitHub Actions" (o token do workflow não consegue criar o site).
 
 ## [3.0.3] - 2026-11-15

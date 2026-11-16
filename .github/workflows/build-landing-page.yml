@@ -19,7 +19,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p landing-page/dist
-          cp landing-page/index.html landing-page/styles.css landing-page/scene.js landing-page/dist/
+          cp landing-page/index.html landing-page/styles.css landing-page/scene.js landing-page/app.js landing-page/llms.txt landing-page/dist/
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:

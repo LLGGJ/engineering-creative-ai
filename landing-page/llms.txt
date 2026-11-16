@@ -1,0 +1,120 @@
+# Engineering Creative AI
+
+> Skill modular para agentes de IA (Claude e similares). Organiza especialistas, workflows, checklists e avaliações para o agente executar tarefas reais, escolher só o contexto necessário e separar resultado verificado de hipótese. Versão 3.0.3. Idioma principal: português brasileiro.
+
+Este arquivo lista o conteúdo do repositório em texto puro, para leitura direta por modelos. Todos os links apontam para a branch `main` no GitHub, que é a versão mais atual.
+
+ZIP completo, sempre atualizado: https://github.com/LLGGJ/engineering-creative-ai/archive/refs/heads/main.zip
+
+## Como usar
+
+1. Leia primeiro o SKILL.md e depois o CORE/ROUTER.md.
+2. Para cada pedido, carregue apenas os módulos necessários.
+3. Execute diretamente quando houver ferramenta, permissão e contexto. Peça autorização antes de ação externa, publicação ou dados sensíveis.
+4. Entregue separando fatos verificados, hipóteses e pontos não verificados.
+
+## Documentos principais
+
+- [SKILL.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SKILL.md): missão, regras de decisão, princípios e mapa rápido.
+- [CORE/ROUTER.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CORE/ROUTER.md): classificação do pedido e escolha de módulos.
+- [README.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/README.md): visão geral, instalação e validação.
+- [AGENTS.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/AGENTS.md): regras para agentes que mantêm o repositório.
+- [ROADMAP.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/ROADMAP.md): direções planejadas (não são funções prontas).
+- [CHANGELOG.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CHANGELOG.md): histórico de versões.
+
+## Módulos
+
+### CORE/ — Núcleo e roteamento
+Roteamento, operação, memória, conectores, tokens e autoria de Skills. O agente aprende a escolher só os módulos necessários.
+- [ROUTER.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CORE/ROUTER.md)
+- [OPERATING-MODEL.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CORE/OPERATING-MODEL.md)
+- [TOOL-AND-CONNECTOR-INTELLIGENCE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CORE/TOOL-AND-CONNECTOR-INTELLIGENCE.md)
+- [PROJECT-MEMORY-TEMPLATE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CORE/PROJECT-MEMORY-TEMPLATE.md)
+- [SKILL-AUTHORING.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CORE/SKILL-AUTHORING.md)
+
+### SPECIALISTS/ — Especialistas por domínio
+Engenharia reversa, software, Android, APIs, segurança, web cinematográfica, imagem, documentos, pesquisa, negócios, QA e privacidade LGPD. O agente aprende o procedimento de cada área sem misturar domínios.
+- [SOFTWARE-ENGINEERING.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/SOFTWARE-ENGINEERING.md)
+- [ANDROID.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/ANDROID.md)
+- [API-INTELLIGENCE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/API-INTELLIGENCE.md)
+- [SECURITY-AUDIT.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/SECURITY-AUDIT.md)
+- [CINEMATIC-WEB-DESIGN.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/CINEMATIC-WEB-DESIGN.md)
+- [REVERSE-ENGINEERING.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/REVERSE-ENGINEERING.md)
+- [AI-IMAGE-ANALYSIS.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/AI-IMAGE-ANALYSIS.md)
+- [DOCUMENT-PROCESSING.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/DOCUMENT-PROCESSING.md)
+- [RESEARCH.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/RESEARCH.md)
+- [QUALITY-ASSURANCE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/QUALITY-ASSURANCE.md)
+- [PRIVACY-LGPD-COMPLIANCE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/SPECIALISTS/PRIVACY-LGPD-COMPLIANCE.md)
+
+### WORKFLOWS/ — Processos passo a passo
+Engenharia reversa, desenvolvimento autônomo, produção de sites, auditoria de privacidade e cookies, pesquisa com verificação de fontes, atualização segura de repositório, verificação de qualidade e pipeline de imagem e documento. O agente aprende a sequência de entrega e os pontos de verificação.
+- [AUTONOMOUS-DEVELOPMENT.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WORKFLOWS/AUTONOMOUS-DEVELOPMENT.md)
+- [WEBSITE-PRODUCTION.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WORKFLOWS/WEBSITE-PRODUCTION.md)
+- [QUALITY-VERIFICATION.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WORKFLOWS/QUALITY-VERIFICATION.md)
+- [SAFE-REPOSITORY-UPDATE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WORKFLOWS/SAFE-REPOSITORY-UPDATE.md)
+- [RESEARCH-AND-SOURCE-VERIFICATION.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WORKFLOWS/RESEARCH-AND-SOURCE-VERIFICATION.md)
+- [IMAGE-DOCUMENT-PIPELINE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WORKFLOWS/IMAGE-DOCUMENT-PIPELINE.md)
+
+### KNOWLEDGE/ — Fundamentos e playbooks
+Princípios reutilizáveis e um playbook de web 3D e cinematográfica (performance, acessibilidade e movimento reduzido).
+- [WEB-3D-PLAYBOOK.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/KNOWLEDGE/WEB-3D-PLAYBOOK.md)
+- [FUNDAMENTALS.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/KNOWLEDGE/FUNDAMENTALS.md)
+
+### VIDEO/ — Pipeline audiovisual
+Do zero ao render: roteiro, geração por IA, Blender, animação por código, edição de footage, áudio e legendas, FFmpeg e QA. O agente aprende a montar e validar cada etapa.
+- [VIDEO-FROM-ZERO.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/VIDEO/VIDEO-FROM-ZERO.md)
+- [AI-VIDEO-GENERATION.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/VIDEO/AI-VIDEO-GENERATION.md)
+- [BLENDER-3D-PRODUCTION.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/VIDEO/BLENDER-3D-PRODUCTION.md)
+- [CODE-ANIMATION.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/VIDEO/CODE-ANIMATION.md)
+- [FFMPEG-COOKBOOK.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/VIDEO/FFMPEG-COOKBOOK.md)
+- [VIDEO-QA.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/VIDEO/VIDEO-QA.md)
+
+### PROMPTS/ — Briefings estruturados
+Briefings para sites cinematográficos, software, engenharia reversa, vídeo e privacidade. O agente aprende a transformar pedidos vagos em critérios de aceite.
+- [CINEMATIC-WEBSITE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/PROMPTS/CINEMATIC-WEBSITE.md)
+- [SOFTWARE-PROJECT-PROMPT.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/PROMPTS/SOFTWARE-PROJECT-PROMPT.md)
+- [MASTER-ENGINEERING-PROMPT.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/PROMPTS/MASTER-ENGINEERING-PROMPT.md)
+
+### CHECKLISTS/ — Checklists
+Segurança, testes de software, release, qualidade de site, produção de vídeo, publicação de Skill e entrega de agente. O agente aprende o que conferir antes de declarar algo pronto.
+- [SECURITY.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CHECKLISTS/SECURITY.md)
+- [SOFTWARE-TESTING.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CHECKLISTS/SOFTWARE-TESTING.md)
+- [RELEASE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CHECKLISTS/RELEASE.md)
+- [WEBSITE-QUALITY.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CHECKLISTS/WEBSITE-QUALITY.md)
+- [AI-AGENT-DELIVERY.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/CHECKLISTS/AI-AGENT-DELIVERY.md)
+
+### EVALUATIONS/ — Avaliações
+Casos de teste, gates de qualidade, scorecards e suíte de regressão. O agente aprende a medir se a entrega atende ao critério.
+- [TEST-CASES.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/EVALUATIONS/TEST-CASES.md)
+- [QUALITY-GATES.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/EVALUATIONS/QUALITY-GATES.md)
+- [QUALITY-SCORE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/EVALUATIONS/QUALITY-SCORE.md)
+- [REGRESSION-SUITE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/EVALUATIONS/REGRESSION-SUITE.md)
+
+### WEB/LEGAL-COMPLIANCE/ — Conformidade web e LGPD
+Modelos de política de privacidade, termos de uso e política de cookies, checklist de LGPD e um exemplo de banner de cookies. Não é parecer jurídico.
+- [LGPD-BRAZIL.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WEB/LEGAL-COMPLIANCE/LGPD-BRAZIL.md)
+- [COMPLIANCE-REVIEW-CHECKLIST.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WEB/LEGAL-COMPLIANCE/COMPLIANCE-REVIEW-CHECKLIST.md)
+- [PRIVACY-POLICY-TEMPLATE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/WEB/LEGAL-COMPLIANCE/PRIVACY-POLICY-TEMPLATE.md)
+
+### REFERENCES/ — Referências
+Índice de fontes oficiais e referências externas. O agente aprende a verificar informações mutáveis na fonte primária.
+- [REFERENCE-INDEX.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/REFERENCES/REFERENCE-INDEX.md)
+
+### TOOLS/ — Ferramentas
+Utilitários e instruções para ferramentas disponíveis ao agente. O agente aprende a distinguir ferramenta disponível de ferramenta hipotética.
+- [README.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/TOOLS/README.md)
+
+### docs/ — Arquitetura e governança
+Arquitetura, política de evolução aditiva, migração de módulos, versionamento e instalação. O agente aprende a não remover nem renomear o que já foi publicado.
+- [ARCHITECTURE.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/docs/ARCHITECTURE.md)
+- [ADDITIVE-STRUCTURE-POLICY.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/docs/ADDITIVE-STRUCTURE-POLICY.md)
+- [INSTALLATION.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/docs/INSTALLATION.md)
+
+### ARCHIVE/ — Arquivo
+Cópias preservadas das bases 1.x e 2.x. Não usar como fonte primária.
+- [README.md](https://raw.githubusercontent.com/LLGGJ/engineering-creative-ai/main/ARCHIVE/README.md)
+
+## Opcional
+
+- [Página do repositório](https://github.com/LLGGJ/engineering-creative-ai)
+- [Landing page](https://llggj.github.io/engineering-creative-ai/)

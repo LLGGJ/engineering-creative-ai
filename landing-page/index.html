@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#101513" />
     <meta
       name="description"
-      content="Engineering Creative AI: conhecimento modular para transformar tarefas complexas em trabalho executado e verificado."
+      content="Engineering Creative AI: uma Skill modular com módulos de engenharia, web, vídeo, segurança e QA para agentes de IA executarem e verificarem trabalho real."
     />
     <meta
       property="og:title"
@@ -14,7 +14,7 @@
     />
     <meta
       property="og:description"
-      content="Uma Skill modular para agentes que precisam entender, construir e verificar trabalho real."
+      content="Todos os módulos da Skill, o que o Claude aprende com cada um e o ZIP sempre atualizado."
     />
     <meta property="og:type" content="website" />
     <title>Engineering Creative AI | Intelligence, in motion</title>
@@ -25,6 +25,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Bibliotecas de animação e ícones (CDN). Sem elas, a página continua legível. -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lucide@0/dist/umd/lucide.min.js"
+    ></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
     <div class="page-grid" aria-hidden="true"></div>
@@ -47,14 +65,14 @@
       </button>
       <nav id="main-nav" aria-label="Navegação principal">
         <a href="#sistema">O sistema</a>
-        <a href="#disciplinas">Disciplinas</a>
-        <a href="#metodo">Método</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#usar">Usar com Claude</a>
         <a
           class="nav-link"
           href="https://github.com/LLGGJ/engineering-creative-ai"
           target="_blank"
           rel="noreferrer"
-          >Abrir repositório <span aria-hidden="true">↗</span></a
+          >Repositório <span aria-hidden="true">↗</span></a
         >
       </nav>
     </header>
@@ -68,19 +86,18 @@
           </p>
           <h1>INTELLIGENCE<br /><span>IN</span> <em>MOTION.</em></h1>
           <p class="hero-description">
-            Uma arquitetura de conhecimento para agentes que precisam entender,
-            construir e verificar trabalho real.
+            Uma Skill com módulos de engenharia, web, vídeo, segurança e QA. O
+            Claude lê, escolhe o que precisa e executa com evidência.
           </p>
           <div class="hero-cta-row">
-            <a
-              class="button button-dark"
-              href="https://github.com/LLGGJ/engineering-creative-ai"
-              target="_blank"
-              rel="noreferrer"
-              >Explorar a Skill <span aria-hidden="true">↗</span></a
+            <a class="button button-dark" href="#modulos"
+              >Ver os módulos <span aria-hidden="true">↓</span></a
             >
-            <a class="quiet-link" href="#sistema"
-              >Conhecer o sistema <span aria-hidden="true">↓</span></a
+            <a
+              class="quiet-link"
+              href="https://github.com/LLGGJ/engineering-creative-ai/archive/refs/heads/main.zip"
+              download
+              >Baixar ZIP atualizado <span aria-hidden="true">↓</span></a
             >
           </div>
           <div class="hero-stamp">
@@ -104,7 +121,7 @@
             <canvas id="system-scene" aria-hidden="true"></canvas>
           </div>
           <div class="scene-coordinates" aria-hidden="true">
-            <span>34° 02' 18.4" N</span><span>01 / 04</span>
+            <span>3D · THREE.JS</span><span>01 / 04</span>
           </div>
           <div class="art-label art-label-bottom">
             <b>ANALYZE → ENGINEER → VERIFY</b><span>LOCAL / GLOBAL</span>
@@ -123,159 +140,257 @@
         </div>
         <div class="system-grid">
           <div class="system-heading reveal">
-            <p class="overline">MÉTODO APLICADO</p>
+            <p class="overline">COMO FUNCIONA</p>
             <h2>
               Menos instrução solta.<br /><em>Mais trabalho concluído.</em>
             </h2>
           </div>
           <div class="system-copy reveal">
             <p>
-              A Engineering Creative AI organiza especialistas, workflows e
-              critérios de qualidade. O agente escolhe o contexto necessário,
-              executa dentro das ferramentas disponíveis e deixa claro o que foi
-              verificado.
+              A Skill organiza especialistas, workflows e critérios de
+              qualidade. O Claude escolhe o contexto necessário, executa dentro
+              das ferramentas disponíveis e deixa claro o que foi verificado e o
+              que não foi.
             </p>
             <a
               class="underlined-link"
               href="https://github.com/LLGGJ/engineering-creative-ai/blob/main/SKILL.md"
               target="_blank"
               rel="noreferrer"
-              >Ler a missão da Skill <span aria-hidden="true">↗</span></a
+              >Ler o SKILL.md <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
         <div class="principle-strip reveal">
           <div>
-            <span class="principle-icon">⚡</span><b>EXECUÇÃO DIRETA</b
-            ><small>Fazer a tarefa quando o ambiente permite.</small>
+            <span class="principle-icon" aria-hidden="true"
+              ><i data-lucide="zap"></i
+            ></span>
+            <b>EXECUÇÃO DIRETA</b
+            ><small>Faz a tarefa quando o ambiente permite.</small>
           </div>
           <div>
-            <span class="principle-icon">🧭</span><b>CONTEXTO CERTO</b
-            ><small>Carregar só os módulos relevantes.</small>
+            <span class="principle-icon" aria-hidden="true"
+              ><i data-lucide="compass"></i
+            ></span>
+            <b>CONTEXTO CERTO</b
+            ><small>Carrega só os módulos relevantes.</small>
           </div>
           <div>
-            <span class="principle-icon">✓</span><b>EVIDÊNCIA REAL</b
-            ><small>Separar resultado, hipótese e limite.</small>
+            <span class="principle-icon" aria-hidden="true"
+              ><i data-lucide="badge-check"></i
+            ></span>
+            <b>EVIDÊNCIA REAL</b
+            ><small>Separa resultado, hipótese e limite.</small>
           </div>
         </div>
       </section>
 
-      <section id="disciplinas" class="disciplines-section">
-        <div class="section-wrap">
-          <div class="discipline-head reveal">
-            <div>
-              <p class="overline">02 / A BIBLIOTECA EM AÇÃO</p>
-              <h2>Uma base.<br /><em>Muitas disciplinas.</em></h2>
+      <section id="modulos" class="modules-section section-wrap">
+        <div class="discipline-head reveal">
+          <div>
+            <p class="overline">02 / TODOS OS MÓDULOS</p>
+            <h2>Uma base.<br /><em>Doze módulos.</em></h2>
+          </div>
+          <p>
+            Cada card mostra para que serve a pasta e o que o Claude aprende ao
+            carregá-la. Clique para abrir no GitHub.
+          </p>
+        </div>
+
+        <div class="module-grid">
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">CORE/</span>
+              <i data-lucide="route" aria-hidden="true"></i>
             </div>
-            <p>
-              Conhecimento técnico conectado a um modo de operar: com clareza,
-              segurança e validação.
-            </p>
+            <h3>Núcleo e roteamento</h3>
+            <p>Roteamento, operação, memória, conectores, tokens e autoria de Skills.</p>
+            <p class="learns"><b>O Claude aprende:</b> escolher só os módulos necessários para cada pedido.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/CORE" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">SPECIALISTS/</span>
+              <i data-lucide="users" aria-hidden="true"></i>
+            </div>
+            <h3>Especialistas</h3>
+            <p>Engenharia reversa, software, Android, APIs, segurança, web, imagem, documentos, pesquisa e QA.</p>
+            <p class="learns"><b>O Claude aprende:</b> o procedimento de cada domínio técnico, sem misturar áreas.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/SPECIALISTS" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">WORKFLOWS/</span>
+              <i data-lucide="workflow" aria-hidden="true"></i>
+            </div>
+            <h3>Workflows</h3>
+            <p>Processos passo a passo: engenharia reversa, desenvolvimento autônomo, produção de sites, auditoria de privacidade, pesquisa e verificação.</p>
+            <p class="learns"><b>O Claude aprende:</b> a sequência de entrega e os pontos de verificação.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/WORKFLOWS" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">KNOWLEDGE/</span>
+              <i data-lucide="book-open" aria-hidden="true"></i>
+            </div>
+            <h3>Fundamentos e playbooks</h3>
+            <p>Fundamentos reutilizáveis e um playbook de web 3D e cinematográfica.</p>
+            <p class="learns"><b>O Claude aprende:</b> princípios que valem em qualquer projeto, como performance e acessibilidade em 3D.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/KNOWLEDGE" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">VIDEO/</span>
+              <i data-lucide="clapperboard" aria-hidden="true"></i>
+            </div>
+            <h3>Vídeo</h3>
+            <p>Do roteiro ao render: geração por IA, Blender, animação por código, edição de footage, legendas, FFmpeg e QA.</p>
+            <p class="learns"><b>O Claude aprende:</b> a montar um pipeline de vídeo e validar cada etapa.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/VIDEO" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">PROMPTS/</span>
+              <i data-lucide="file-text" aria-hidden="true"></i>
+            </div>
+            <h3>Briefings</h3>
+            <p>Briefings estruturados para sites cinematográficos, software, engenharia reversa e privacidade.</p>
+            <p class="learns"><b>O Claude aprende:</b> como transformar um pedido vago em critérios de aceite claros.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/PROMPTS" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">CHECKLISTS/</span>
+              <i data-lucide="list-checks" aria-hidden="true"></i>
+            </div>
+            <h3>Checklists</h3>
+            <p>Segurança, testes, release, qualidade de software e de site, e publicação de Skill.</p>
+            <p class="learns"><b>O Claude aprende:</b> o que conferir antes de declarar um trabalho pronto.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/CHECKLISTS" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">EVALUATIONS/</span>
+              <i data-lucide="gauge" aria-hidden="true"></i>
+            </div>
+            <h3>Avaliações</h3>
+            <p>Casos de teste, gates de qualidade, scorecards e suíte de regressão.</p>
+            <p class="learns"><b>O Claude aprende:</b> a medir se uma entrega atende ao critério antes de encerrar.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/EVALUATIONS" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">WEB/</span>
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </div>
+            <h3>Conformidade web (LGPD)</h3>
+            <p>Cookies, política de privacidade, termos de uso e checklist de LGPD para sites brasileiros.</p>
+            <p class="learns"><b>O Claude aprende:</b> a apontar lacunas de privacidade, sem dar parecer jurídico.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/WEB/LEGAL-COMPLIANCE" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">REFERENCES/</span>
+              <i data-lucide="library" aria-hidden="true"></i>
+            </div>
+            <h3>Referências</h3>
+            <p>Índice de fontes oficiais e referências externas usadas pela Skill.</p>
+            <p class="learns"><b>O Claude aprende:</b> a verificar informações mutáveis na fonte primária.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/REFERENCES" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">TOOLS/</span>
+              <i data-lucide="wrench" aria-hidden="true"></i>
+            </div>
+            <h3>Ferramentas</h3>
+            <p>Utilitários e instruções para ferramentas que o agente pode usar.</p>
+            <p class="learns"><b>O Claude aprende:</b> a distinguir ferramenta disponível de ferramenta hipotética.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/TOOLS" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">docs/</span>
+              <i data-lucide="git-branch" aria-hidden="true"></i>
+            </div>
+            <h3>Arquitetura e governança</h3>
+            <p>Arquitetura, política de evolução aditiva, release e versionamento.</p>
+            <p class="learns"><b>O Claude aprende:</b> a não remover nem renomear o que já foi publicado.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/docs" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="module-card">
+            <div class="module-top">
+              <span class="module-tag">ARCHIVE/</span>
+              <i data-lucide="archive" aria-hidden="true"></i>
+            </div>
+            <h3>Arquivo</h3>
+            <p>Cópias preservadas das bases anteriores (1.x e 2.x). Não é fonte primária.</p>
+            <p class="learns"><b>O Claude aprende:</b> a consultar o arquivo só para histórico.</p>
+            <a href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/ARCHIVE" target="_blank" rel="noreferrer">Abrir pasta <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="usar" class="usage-section section-wrap section-rule">
+        <div class="discipline-head reveal">
+          <div>
+            <p class="overline">03 / USAR COM O CLAUDE</p>
+            <h2>Envie a Skill.<br /><em>Peça uma tarefa real.</em></h2>
           </div>
-          <div class="discipline-grid">
-            <article class="discipline-card card-coral reveal">
-              <div class="card-top">
-                <span>01 — DECODE</span
-                ><span class="emoji" aria-hidden="true">🔐</span>
-              </div>
-              <h3>Engenharia reversa</h3>
-              <p>
-                Análise autorizada de aplicações, formatos, binários e
-                protocolos.
-              </p>
-              <a
-                href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/SPECIALISTS"
-                aria-label="Explorar especialistas"
-                target="_blank"
-                rel="noreferrer"
-                >↗</a
-              >
-            </article>
-            <article class="discipline-card card-paper reveal">
-              <div class="card-top">
-                <span>02 — CREATE</span
-                ><span class="emoji" aria-hidden="true">🧑‍💻</span>
-              </div>
-              <h3>Software & Android</h3>
-              <p>Arquitetura, implementação, debugging, testes e entrega.</p>
-              <a
-                href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/SPECIALISTS"
-                aria-label="Explorar especialistas"
-                target="_blank"
-                rel="noreferrer"
-                >↗</a
-              >
-            </article>
-            <article class="discipline-card card-lime reveal">
-              <div class="card-top">
-                <span>03 — CONNECT</span
-                ><span class="emoji" aria-hidden="true">🔌</span>
-              </div>
-              <h3>APIs & automação</h3>
-              <p>Contratos, integrações, webhooks e fluxos conectados.</p>
-              <a
-                href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/SPECIALISTS"
-                aria-label="Explorar especialistas"
-                target="_blank"
-                rel="noreferrer"
-                >↗</a
-              >
-            </article>
-            <article class="discipline-card card-blue reveal">
-              <div class="card-top">
-                <span>04 — DIRECT</span
-                ><span class="emoji" aria-hidden="true">🎬</span>
-              </div>
-              <h3>Web & vídeo</h3>
-              <p>Experiências cinematográficas, 3D, animação, edição e QA.</p>
-              <a
-                href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/VIDEO"
-                aria-label="Explorar produção de vídeo"
-                target="_blank"
-                rel="noreferrer"
-                >↗</a
-              >
-            </article>
-            <article class="discipline-card card-paper reveal">
-              <div class="card-top">
-                <span>05 — INTERPRET</span
-                ><span class="emoji" aria-hidden="true">🖼️</span>
-              </div>
-              <h3>Imagem & documentos</h3>
-              <p>Análise visual, OCR, extração, síntese e comparação.</p>
-              <a
-                href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/WORKFLOWS"
-                aria-label="Explorar workflows"
-                target="_blank"
-                rel="noreferrer"
-                >↗</a
-              >
-            </article>
-            <article class="discipline-card card-coral reveal">
-              <div class="card-top">
-                <span>06 — PROTECT</span
-                ><span class="emoji" aria-hidden="true">🛡️</span>
-              </div>
-              <h3>Segurança & qualidade</h3>
-              <p>
-                Auditoria defensiva, critérios de aceite e verificação
-                reproduzível.
-              </p>
-              <a
-                href="https://github.com/LLGGJ/engineering-creative-ai/tree/main/CHECKLISTS"
-                aria-label="Explorar checklists"
-                target="_blank"
-                rel="noreferrer"
-                >↗</a
-              >
-            </article>
+          <p>
+            O Claude lê o SKILL.md e o ROUTER, escolhe os módulos e só depois
+            executa. Você também pode baixar tudo de uma vez.
+          </p>
+        </div>
+
+        <ol class="usage-steps">
+          <li class="reveal"><span>01</span><b>Baixe o ZIP</b><small>Sempre a versão mais recente da branch main.</small></li>
+          <li class="reveal"><span>02</span><b>Envie ao Claude</b><small>Anexe o ZIP ou o SKILL.md no projeto ou na conversa.</small></li>
+          <li class="reveal"><span>03</span><b>Peça uma tarefa</b><small>Ele escolhe os módulos e pede autorização quando precisar.</small></li>
+          <li class="reveal"><span>04</span><b>Confira a evidência</b><small>Resultado, hipótese e limites vêm separados.</small></li>
+        </ol>
+
+        <div class="prompt-box reveal">
+          <div class="prompt-head">
+            <span>PROMPT PARA COPIAR</span>
+            <button type="button" class="copy-button" data-copy="#prompt-text">
+              Copiar prompt
+            </button>
           </div>
+          <pre id="prompt-text">Leia SKILL.md e CORE/ROUTER.md. Analise minha tarefa, escolha apenas os módulos necessários, faça um plano curto, execute o que estiver dentro das ferramentas disponíveis e valide o resultado. Separe fatos verificados, hipóteses e pontos não verificados.</pre>
+        </div>
+
+        <div class="download-cta reveal">
+          <div>
+            <p class="overline">PACOTE COMPLETO</p>
+            <h3>Baixar tudo em um ZIP</h3>
+            <p>Link direto para a branch main no GitHub. Sempre aponta para a versão mais atual.</p>
+          </div>
+          <a
+            class="button button-light"
+            href="https://github.com/LLGGJ/engineering-creative-ai/archive/refs/heads/main.zip"
+            download
+            >Baixar ZIP <i data-lucide="download" aria-hidden="true"></i
+          ></a>
         </div>
       </section>
 
       <section id="metodo" class="method-section section-wrap section-rule">
         <div class="section-kicker reveal">
-          <span>03 / DO PEDIDO À EVIDÊNCIA</span
+          <span>04 / DO PEDIDO À EVIDÊNCIA</span
           ><span>UM FLUXO, QUATRO MOVIMENTOS</span>
         </div>
         <div class="method-title reveal">
@@ -285,25 +400,33 @@
         <div class="method-track">
           <article class="method-step reveal">
             <span class="step-number">01</span
-            ><span class="step-symbol">⌕</span>
+            ><span class="step-symbol" aria-hidden="true"
+              ><i data-lucide="search"></i
+            ></span>
             <h3>Entender</h3>
             <p>Objetivo, contexto, ambiente e risco.</p>
           </article>
           <article class="method-step reveal">
             <span class="step-number">02</span
-            ><span class="step-symbol">↗</span>
+            ><span class="step-symbol" aria-hidden="true"
+              ><i data-lucide="crosshair"></i
+            ></span>
             <h3>Direcionar</h3>
             <p>Especialistas e ferramentas sob demanda.</p>
           </article>
           <article class="method-step reveal">
             <span class="step-number">03</span
-            ><span class="step-symbol">✳</span>
+            ><span class="step-symbol" aria-hidden="true"
+              ><i data-lucide="play"></i
+            ></span>
             <h3>Executar</h3>
             <p>Passos claros, reversíveis e documentados.</p>
           </article>
           <article class="method-step reveal">
             <span class="step-number">04</span
-            ><span class="step-symbol">✓</span>
+            ><span class="step-symbol" aria-hidden="true"
+              ><i data-lucide="check"></i
+            ></span>
             <h3>Verificar</h3>
             <p>Testes, evidências e limites explícitos.</p>
           </article>
@@ -339,7 +462,7 @@
         target="_blank"
         rel="noreferrer"
         >GITHUB ↗</a
-      >
+      ><a href="llms.txt">LLMS.TXT</a>
     </footer>
     <script type="module" src="scene.js"></script>
   </body>

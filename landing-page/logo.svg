@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Logo Engineering Creative AI">
+  <title>Engineering Creative AI</title>
+  <defs>
+    <linearGradient id="logo-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe9dc"/>
+      <stop offset="1" stop-color="#8d877c"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 8 L104 34 L104 86 L60 112 L16 86 L16 34 Z" fill="#0e0c0c" stroke="url(#logo-edge)" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M44 36 H76 V46 H54 V56 H72 V66 H54 V74 H76 V84 H44 Z" fill="#b3261e"/>
+  <path d="M92 50 Q93 59 102 60 Q93 61 92 70 Q91 61 82 60 Q91 59 92 50 Z" fill="#d8ff68"/>
+</svg>

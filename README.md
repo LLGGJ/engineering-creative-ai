@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src=".github/assets/logo.svg" alt="Logo Engineering Creative AI" width="120">
+
 <img src=".github/assets/banner.svg" alt="Engineering Creative AI — banner animado" width="100%">
 
 ### 🧠 Um sistema modular de engenharia para agentes de IA
@@ -13,7 +15,7 @@
 
 **Uma base modular de conhecimento, processos e ferramentas para transformar tarefas técnicas complexas em entregas verificáveis.**
 
-🧭 [Começar](#-início-rápido) · 🏗️ [Arquitetura](#-arquitetura) · 🧩 [Módulos](#-módulos) · 💬 [Exemplos](#-exemplos-de-pedidos) · 🎬 [Portal](#-portal-visual) · 🤝 [Contribuir](CONTRIBUTING.md)
+🌐 [Página web](https://llggj.github.io/engineering-creative-ai/) · 🧭 [Começar](#-início-rápido) · 🏗️ [Arquitetura](#-arquitetura) · 🧩 [Módulos](#-módulos) · 💬 [Exemplos](#-exemplos-de-pedidos) · 🎬 [Portal](#-portal-visual) · 🤝 [Contribuir](CONTRIBUTING.md)
 
 </div>
 

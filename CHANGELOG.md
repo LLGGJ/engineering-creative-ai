@@ -12,6 +12,8 @@
 - README: banner SVG animado (`.github/assets/banner.svg`), badges de status dos workflows, seção de exemplos de pedidos e alertas de dica/aviso.
 - Manifesto regenerado com os novos arquivos; validação local passa.
 - README: seção de perguntas frequentes.
+- Logo da Skill (`.github/assets/logo.svg`), usada no README e no site (topo, rodapé, hero e favicon).
+- Landing page: módulos fixados e percorridos pelo scroll em celular e desktop; menu hambúrguer corrigido (havia dois controladores brigando); foco visível e acessibilidade do menu.
 - Landing page: correções de responsividade (rolagem horizontal dos módulos no celular, título com tamanho fluido) e versão nos arquivos CSS/JS para evitar cache antigo.
 - Landing page: redesenhada em linguagem cinematográfica (grão, cortina de entrada, título com revelação por palavra, marquee, manifesto que acende no scroll, faixa de módulos fixada e percorrida no scroll, cards 3D com brilho, linha de método e menu em tela cheia). Movimento reduzido é respeitado.
 - Landing page: módulos em cards com ícones Lucide, animações GSAP/ScrollTrigger e Lenis, seção de uso com Claude, botão de ZIP da branch main e `llms.txt` com o índice de todos os módulos.

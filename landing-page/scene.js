@@ -2,25 +2,6 @@ const reducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
 ).matches;
 const canvas = document.querySelector("#system-scene");
-const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector("#main-nav");
-
-menuButton.addEventListener("click", () => {
-  const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", String(!isOpen));
-  menuButton.setAttribute("aria-label", isOpen ? "Abrir menu" : "Fechar menu");
-  navigation.classList.toggle("open", !isOpen);
-  document.body.classList.toggle("menu-open", !isOpen);
-});
-
-navigation.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Abrir menu");
-    navigation.classList.remove("open");
-    document.body.classList.remove("menu-open");
-  });
-});
 
 const revealItems = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && !reducedMotion) {

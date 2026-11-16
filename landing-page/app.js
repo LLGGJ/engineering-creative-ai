@@ -1,16 +1,21 @@
-// Camada cinematográfica: intro, scroll com GSAP/ScrollTrigger, Lenis e ícones.
+// Camada cinematográfica: menu, intro, scroll com GSAP/ScrollTrigger, Lenis e ícones.
 // Todas as bibliotecas vêm de CDN. Sem elas, a página segue legível e estática.
 (() => {
   const root = document.documentElement;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const desktop = window.matchMedia("(min-width: 900px)").matches;
+
+  // Scroll suave (Lenis). Criado já aqui para o menu poder pausá-lo.
+  let lenis = null;
+  if (window.Lenis && !reduced) {
+    lenis = new window.Lenis({ duration: 1.15, smoothWheel: true });
+  }
 
   // Ícones Lucide.
   if (window.lucide && typeof window.lucide.createIcons === "function") {
     window.lucide.createIcons();
   }
 
-  // Menu em tela cheia.
+  // Menu em tela cheia (único controlador do hambúrguer).
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector("#main-nav");
   const setMenu = (open) => {
@@ -18,11 +23,17 @@
     toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
     nav.classList.toggle("open", open);
     document.body.classList.toggle("menu-open", open);
+    nav.setAttribute("aria-hidden", String(!open));
+    if (lenis) (open ? lenis.stop() : lenis.start());
   };
+  setMenu(false);
   toggle.addEventListener("click", () => {
     setMenu(toggle.getAttribute("aria-expanded") !== "true");
   });
   nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setMenu(false);
+  });
 
   // Copiar prompt.
   document.querySelectorAll("[data-copy]").forEach((button) => {
@@ -41,17 +52,16 @@
   });
 
   // Brilho que segue o cursor e inclinação 3D dos cards.
-  const cards = document.querySelectorAll(".module-card");
   if (!reduced) {
-    cards.forEach((card) => {
+    document.querySelectorAll(".module-card").forEach((card) => {
       card.addEventListener("pointermove", (e) => {
         const r = card.getBoundingClientRect();
         const x = e.clientX - r.left;
         const y = e.clientY - r.top;
         card.style.setProperty("--mx", `${x}px`);
         card.style.setProperty("--my", `${y}px`);
-        const rx = ((y / r.height) - 0.5) * -8;
-        const ry = ((x / r.width) - 0.5) * 8;
+        const rx = (y / r.height - 0.5) * -8;
+        const ry = (x / r.width - 0.5) * 8;
         card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
       });
       card.addEventListener("pointerleave", () => {
@@ -60,23 +70,21 @@
     });
   }
 
-  // Sem movimento: mostra tudo e encerra.
+  // Sem GSAP ou com movimento reduzido: mostra tudo e encerra.
   if (reduced || !window.gsap) {
     root.classList.add("intro-done");
     return;
   }
 
   const gsap = window.gsap;
-  let lenis = null;
-  if (window.Lenis) {
-    lenis = new window.Lenis({ duration: 1.15, smoothWheel: true });
+  if (lenis) {
     gsap.ticker.add((time) => lenis.raf(time * 1000));
     gsap.ticker.lagSmoothing(0);
   }
 
   // Cortina de entrada e entrada do título.
-  const intro = gsap.timeline();
-  intro
+  gsap
+    .timeline()
     .to(".intro-curtain span", { opacity: 0, duration: 0.4, ease: "power2.out", delay: 0.2 })
     .to(".intro-curtain", {
       yPercent: -100,
@@ -85,7 +93,7 @@
       onComplete: () => root.classList.add("intro-done"),
     })
     .from(".hero-title .word", { yPercent: 110, duration: 1.2, ease: "power4.out", stagger: 0.12 }, "-=0.6")
-    .from(".kicker, .hero-sub, .cta-row, .hero-meta", { opacity: 0, y: 24, duration: 0.9, ease: "power2.out", stagger: 0.1 }, "-=0.9");
+    .from(".hero-logo, .kicker, .hero-sub, .cta-row, .hero-meta", { opacity: 0, y: 24, duration: 0.9, ease: "power2.out", stagger: 0.1 }, "-=0.9");
 
   if (!window.ScrollTrigger) return;
   gsap.registerPlugin(window.ScrollTrigger);
@@ -125,32 +133,35 @@
     scrollTrigger: { trigger: ".principles", start: "top 88%" },
   });
 
-  // Faixa de módulos: fixada e percorrida horizontalmente em desktop.
-  if (desktop) {
-    const track = document.querySelector(".modules-track");
+  // Módulos: a seção fica fixada e o scroll vertical vira movimento horizontal.
+  // Só depois de passar por todos os cards a página continua para baixo.
+  // Vale para celular e desktop.
+  const modules = document.querySelector(".modules");
+  const track = document.querySelector(".modules-track");
+  if (modules && track) {
     const distance = () => Math.max(0, track.scrollWidth - window.innerWidth);
     gsap.to(track, {
       x: () => -distance(),
       ease: "none",
       scrollTrigger: {
-        trigger: ".modules",
+        trigger: modules,
         start: "top top",
         end: () => `+=${distance()}`,
         pin: true,
-        scrub: 1,
+        scrub: 0.8,
         invalidateOnRefresh: true,
+        anticipatePin: 1,
       },
     });
+    gsap.from(".module-card", {
+      y: 60,
+      opacity: 0,
+      stagger: 0.06,
+      duration: 0.9,
+      ease: "power3.out",
+      scrollTrigger: { trigger: modules, start: "top 40%" },
+    });
   }
-  // Cards entram com rotação conforme aparecem.
-  gsap.from(".module-card", {
-    y: 60,
-    opacity: 0,
-    stagger: 0.06,
-    duration: 0.9,
-    ease: "power3.out",
-    scrollTrigger: { trigger: ".modules-track", start: "top 90%" },
-  });
 
   // Método: a linha cresce com o scroll.
   gsap.to(".method-line span", {

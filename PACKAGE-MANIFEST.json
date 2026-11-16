@@ -3,7 +3,7 @@
   "version": "3.0.3",
   "release_date": "2026-11-15",
   "description": "Additive modular engineering knowledge system for AI coding agents, with preserved 1.x and 2.x baselines, cinematic portal and automated package validation.",
-  "file_count": 192,
+  "file_count": 194,
   "manifest_policy": "All files except this manifest are listed with byte count and SHA-256. file_count includes this manifest.",
   "compatibility_policy": "Additive: do not delete or rename published paths; preserve replaced legacy content and document migrations.",
   "files": [
@@ -26,6 +26,11 @@
       "path": ".github/assets/banner.svg",
       "bytes": 4799,
       "sha256": "9dc58feeff34a08e03177a69080c869cb047c1c7101e75e8f8f0bf5d147c0c80"
+    },
+    {
+      "path": ".github/assets/logo.svg",
+      "bytes": 675,
+      "sha256": "9f94ae9da6b8a9e4422b44b5b2a81766c026b6d9ada0a68c9b6e2179ed0a4f6d"
     },
     {
       "path": ".github/workflows/build-landing-page.yml",
@@ -419,8 +424,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3905,
-      "sha256": "9fb6f7455afeefbaf12ec626f879a683d089211575f71c39b9fe870d0e039601"
+      "bytes": 4194,
+      "sha256": "19e84b65eb2f16aed58cdc80f08f13827a53df9efa061428bfa91240db49ca9e"
     },
     {
       "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
@@ -604,8 +609,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12998,
-      "sha256": "a72e3bb771384d1715815d296c62a3cc7ae65cc051e9f9f446a20fb12acb1f15"
+      "bytes": 13154,
+      "sha256": "e50dcdba06a35cc5f4c9e3d1a5b7b534b826d6e3e33028dc653f737d92b0a2d3"
     },
     {
       "path": "REFERENCES/REFERENCE-INDEX.md",
@@ -899,13 +904,13 @@
     },
     {
       "path": "landing-page/app.js",
-      "bytes": 6376,
-      "sha256": "3c4b7d4fbb9eca15e03d94a53e09ca9be5c88f15e16b77be45becc8662606215"
+      "bytes": 6829,
+      "sha256": "9f6f1424ebdbde640c3e997e70d63da2cc6a4d5f1f3a0ce90768bbbf9ffa4f7d"
     },
     {
       "path": "landing-page/index.html",
-      "bytes": 17249,
-      "sha256": "159c8e2f180807e5bbb234282d593145c19aad9fe0bc9aab77b097651afca9b7"
+      "bytes": 17483,
+      "sha256": "070786b9e46b8023256841febf149d8ebdbf6a11159eda6b90cf435f7091f49d"
     },
     {
       "path": "landing-page/llms.txt",
@@ -913,14 +918,19 @@
       "sha256": "6449b10bcfbdd6589996690447c3cffd4e72a9ddcd497e76752c5535efd76921"
     },
     {
+      "path": "landing-page/logo.svg",
+      "bytes": 675,
+      "sha256": "9f94ae9da6b8a9e4422b44b5b2a81766c026b6d9ada0a68c9b6e2179ed0a4f6d"
+    },
+    {
       "path": "landing-page/scene.js",
-      "bytes": 5365,
-      "sha256": "027df79fb6f8a5df0b31ba211e121604e2135aff6a58a18fc2766b5b34e912c1"
+      "bytes": 4578,
+      "sha256": "d7964ea3cb6c6bef4967ccb216b4e4dea341c4c48b7f740d7c8e7537b3d7de82"
     },
     {
       "path": "landing-page/styles.css",
-      "bytes": 18362,
-      "sha256": "6ac55b3e9bd8e4512eb3cbed42527a14a49922125dc4bacb1d0629b1fd7ca11f"
+      "bytes": 18941,
+      "sha256": "6368f50bdbca43bab4ff86f8bb751d64df308d23cb21a7165695ef131cd8a799"
     },
     {
       "path": "portal/README.md",

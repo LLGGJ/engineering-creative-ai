@@ -21,7 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=5" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"
@@ -38,7 +39,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/lucide@0/dist/umd/lucide.min.js"
     ></script>
-    <script defer src="app.js?v=4"></script>
+    <script defer src="app.js?v=5"></script>
   </head>
   <body>
     <!-- Cortina de entrada (some sozinha; com movimento reduzido, não aparece) -->
@@ -49,7 +50,7 @@
 
     <header class="topbar">
       <a class="wordmark" href="#inicio" aria-label="Início">
-        <span class="mark">E<i>✳</i></span>
+        <img class="logo-img" src="logo.svg" alt="" width="44" height="44" />
         <span class="wordmark-text">ENGINEERING<b>CREATIVE AI</b></span>
       </a>
       <button
@@ -85,6 +86,7 @@
           <canvas id="system-scene" aria-hidden="true"></canvas>
         </div>
         <div class="hero-copy">
+          <img class="hero-logo" src="logo.svg" alt="Logo Engineering Creative AI" width="96" height="96" />
           <p class="kicker"><span class="dot"></span> SKILL MODULAR / V3.0.3</p>
           <h1 class="hero-title" aria-label="Engineering Creative AI">
             <span class="line"><span class="word">ENGINEERING</span></span>
@@ -137,7 +139,7 @@
         <div class="modules-head">
           <p class="eyebrow">02 / TODOS OS MÓDULOS</p>
           <h2 class="section-title">DOZE<br /><span class="outline">MÓDULOS.</span></h2>
-          <p class="modules-hint">Role para o lado →</p>
+          <p class="modules-hint">Continue rolando →</p>
         </div>
         <div class="modules-scroll">
         <div class="modules-track">
@@ -298,7 +300,7 @@
 
     <footer class="footer">
       <a class="wordmark" href="#inicio">
-        <span class="mark">E<i>✳</i></span>
+        <img class="logo-img" src="logo.svg" alt="" width="44" height="44" />
         <span class="wordmark-text">ENGINEERING<b>CREATIVE AI</b></span>
       </a>
       <span>BUILD CAREFULLY. VERIFY EVERYTHING.</span>
@@ -308,6 +310,6 @@
       </nav>
     </footer>
 
-    <script type="module" src="scene.js?v=4"></script>
+    <script type="module" src="scene.js?v=5"></script>
   </body>
 </html>

@@ -378,11 +378,17 @@ html.intro-done .intro-curtain { display: none; }
 /* ---------- Módulos: faixa horizontal ---------- */
 .modules {
   position: relative;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
   background: var(--ink-2);
   border-block: 1px solid var(--line);
 }
 .modules-head {
-  padding: clamp(80px, 12vw, 140px) var(--pad) 40px;
+  padding: clamp(72px, 10vh, 120px) var(--pad) 24px;
   display: flex;
   flex-wrap: wrap;
   align-items: end;
@@ -409,8 +415,9 @@ html.intro-done .intro-curtain { display: none; }
 .modules-track {
   display: flex;
   gap: 22px;
-  padding: 24px var(--pad) 120px;
+  padding: 12px var(--pad) 40px;
   width: max-content;
+  will-change: transform;
 }
 .module-card {
   position: relative;
@@ -685,18 +692,35 @@ html:not(.gsap-ready) .statement .w { transform: none; }
   }
   .grain { display: none; }
   .intro-curtain { display: none; }
-  .modules-track { width: auto; flex-wrap: wrap; }
   .module-card { flex-basis: min(380px, 100%); }
 }
 
-/* Rolagem horizontal dos módulos no celular (no desktop a faixa é fixada e movida pelo GSAP). */
-.modules-scroll { position: relative; }
+
+/* ---------- Logo ---------- */
+.logo-img { width: 44px; height: 44px; flex: none; filter: drop-shadow(0 0 14px rgba(179, 38, 30, 0.35)); }
+.hero-logo {
+  width: clamp(72px, 9vw, 110px);
+  height: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 28px rgba(179, 38, 30, 0.45));
+}
+.footer .logo-img { width: 40px; height: 40px; }
+
+/* ---------- Acessibilidade ---------- */
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.overlay-nav[aria-hidden="true"] a { pointer-events: none; }
+.overlay-nav:not([aria-hidden="true"]) a { pointer-events: auto; }
+
 @media (max-width: 899px) {
-  .modules-scroll {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-  }
   .modules-track { padding-right: var(--pad); }
-  .module-card { scroll-snap-align: start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modules { height: auto; overflow: visible; }
+  .modules-track { width: auto; flex-wrap: wrap; }
+  .hero-logo { animation: none; }
 }

@@ -419,8 +419,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3730,
-      "sha256": "e92d9c69e38c512712c4c70fa4152b48cbb92256c37e3b74e3cf798bcf94748e"
+      "bytes": 3905,
+      "sha256": "9fb6f7455afeefbaf12ec626f879a683d089211575f71c39b9fe870d0e039601"
     },
     {
       "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
@@ -904,8 +904,8 @@
     },
     {
       "path": "landing-page/index.html",
-      "bytes": 17185,
-      "sha256": "2937d62f16eef0aae86258898538184a7c0f62b1f5a6e7a926329c4332352643"
+      "bytes": 17249,
+      "sha256": "159c8e2f180807e5bbb234282d593145c19aad9fe0bc9aab77b097651afca9b7"
     },
     {
       "path": "landing-page/llms.txt",
@@ -919,8 +919,8 @@
     },
     {
       "path": "landing-page/styles.css",
-      "bytes": 17978,
-      "sha256": "aa524a98d56e60ceec414e9575d9e0fc1e021ef10eb6e86864040b82f3f78e60"
+      "bytes": 18362,
+      "sha256": "6ac55b3e9bd8e4512eb3cbed42527a14a49922125dc4bacb1d0629b1fd7ca11f"
     },
     {
       "path": "portal/README.md",

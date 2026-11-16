@@ -146,7 +146,7 @@ html.intro-done .intro-curtain { display: none; }
   align-items: baseline;
   gap: 18px;
   font-family: var(--display);
-  font-size: clamp(44px, 9vw, 110px);
+  font-size: clamp(36px, 9vw, 110px);
   line-height: 1.02;
   text-transform: uppercase;
   transition: color 0.3s ease, transform 0.4s ease;
@@ -234,7 +234,7 @@ html.intro-done .intro-curtain { display: none; }
 .hero-title {
   margin: 20px 0 22px;
   font-family: var(--display);
-  font-size: clamp(64px, 15.5vw, 260px);
+  font-size: clamp(44px, 13.5vw, 260px);
   line-height: 0.86;
   text-transform: uppercase;
   letter-spacing: -0.005em;
@@ -687,4 +687,16 @@ html:not(.gsap-ready) .statement .w { transform: none; }
   .intro-curtain { display: none; }
   .modules-track { width: auto; flex-wrap: wrap; }
   .module-card { flex-basis: min(380px, 100%); }
+}
+
+/* Rolagem horizontal dos módulos no celular (no desktop a faixa é fixada e movida pelo GSAP). */
+.modules-scroll { position: relative; }
+@media (max-width: 899px) {
+  .modules-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .modules-track { padding-right: var(--pad); }
+  .module-card { scroll-snap-align: start; }
 }

@@ -34,8 +34,8 @@
     },
     {
       "path": ".github/workflows/deploy-github-pages.yml",
-      "bytes": 1086,
-      "sha256": "8e8d2b11a4b0863c5c253c36db443e6fd8d02e3c24e8f43b77e7ee5559d3ef06"
+      "bytes": 1293,
+      "sha256": "d9c8e23c409f3dc397e76bc137a557738173bbd29b8f7a24cafcfa2de6a367c4"
     },
     {
       "path": ".github/workflows/validate.yml",
@@ -419,8 +419,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3022,
-      "sha256": "c6cf4fd2f8da4ce745e464a462664b67c13c380415659a562ded6a7ae7b59d75"
+      "bytes": 3182,
+      "sha256": "06d2ac29bdd5257e587efdbc3ad86af5ace8c2882f501a9470c845f8792eedad"
     },
     {
       "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
@@ -604,8 +604,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11759,
-      "sha256": "36098c2f74849e22f7b60722596c439f7b9e8883cc12fbd368ac2f5eef00f920"
+      "bytes": 12998,
+      "sha256": "a72e3bb771384d1715815d296c62a3cc7ae65cc051e9f9f446a20fb12acb1f15"
     },
     {
       "path": "REFERENCES/REFERENCE-INDEX.md",

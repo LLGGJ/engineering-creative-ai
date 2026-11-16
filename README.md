@@ -206,6 +206,38 @@ Veja `docs/ADDITIVE-STRUCTURE-POLICY.md`, `docs/MODULE-MIGRATION-MAP.md` e `docs
 
 ---
 
+## ❓ Perguntas frequentes
+
+<details>
+<summary>🤔 <b>Preciso de algum programa instalado para usar?</b></summary>
+
+Não para ler a skill. Você precisa de um cliente que aceite Skills ou instruções em arquivo (por exemplo, Claude Code ou um projeto com `SKILL.md`). Ferramentas extras, como navegador, Python ou acesso a repositórios, são opcionais e dependem do que o cliente oferece.
+
+</details>
+
+<details>
+<summary>🧾 <b>A skill faz o trabalho sozinha?</b></summary>
+
+Ela orienta o agente a executar a tarefa com as ferramentas que ele tiver. Se faltarem permissões ou dados, ela pergunta ou explica o que falta. Ela não substitui revisão humana em decisões de alto impacto.
+
+</details>
+
+<details>
+<summary>🔐 <b>Posso usar para auditar sistemas de terceiros?</b></summary>
+
+Não sem autorização explícita. O pacote só orienta análise de sistemas próprios ou autorizados.
+
+</details>
+
+<details>
+<summary>🧪 <b>Como sei se o pacote está íntegro?</b></summary>
+
+Rode a validação local (`python scripts/validate_package.py` e `python -m unittest discover -s tests -v`). A validação confere manifesto, arquivos e metadados. Ela não prova que cada procedimento funciona em todos os ambientes.
+
+</details>
+
+---
+
 ## 🗺️ Roadmap
 
 Consulte [ROADMAP.md](ROADMAP.md). Itens futuros são propostas, não funcionalidades já implementadas.

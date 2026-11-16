@@ -26,6 +26,10 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          # Ativa o Pages com fonte "GitHub Actions" se ainda não estiver habilitado.
+          # Sem isso, o passo falha com "Get Pages site failed ... Not Found".
+          enablement: true
 
       - name: Validate landing page entrypoint
         run: |

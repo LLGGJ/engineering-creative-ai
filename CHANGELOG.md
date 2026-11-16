@@ -12,7 +12,7 @@
 - README: banner SVG animado (`.github/assets/banner.svg`), badges de status dos workflows, seção de exemplos de pedidos e alertas de dica/aviso.
 - Manifesto regenerado com os novos arquivos; validação local passa.
 - README: seção de perguntas frequentes.
-- Pages: `configure-pages` com `enablement: true` para ativar o GitHub Pages automaticamente na primeira execução.
+- Pages: o deploy exige que GitHub Pages esteja habilitado em Settings → Pages com fonte "GitHub Actions" (o token do workflow não consegue criar o site).
 
 ## [3.0.3] - 2026-11-15
 

@@ -34,8 +34,8 @@
     },
     {
       "path": ".github/workflows/deploy-github-pages.yml",
-      "bytes": 1293,
-      "sha256": "d9c8e23c409f3dc397e76bc137a557738173bbd29b8f7a24cafcfa2de6a367c4"
+      "bytes": 1086,
+      "sha256": "8e8d2b11a4b0863c5c253c36db443e6fd8d02e3c24e8f43b77e7ee5559d3ef06"
     },
     {
       "path": ".github/workflows/validate.yml",
@@ -419,8 +419,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3182,
-      "sha256": "06d2ac29bdd5257e587efdbc3ad86af5ace8c2882f501a9470c845f8792eedad"
+      "bytes": 3223,
+      "sha256": "a6b3d66ad3c6423b8a4c2b88131e55e2fc6ae83e04c39c63648731bb124efd31"
     },
     {
       "path": "CHECKLISTS/ADDITIVE-RELEASE.md",
